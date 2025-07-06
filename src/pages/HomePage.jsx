@@ -25,7 +25,7 @@ const HomePage = () => {
             </p>
             <p className="text-2xl text-[#23eeb1]">{"<Portfolio />"}</p>
           </div>
-          <div className="md:w-[432px] w-[250px]  rounded-md p-4 md:mb-6 border border-[#3c3c3c] font-mono">
+          <div className="md:w-[432px]  rounded-md p-4 md:mb-6 border border-[#3c3c3c] font-mono">
             <pre className="whitespace-pre-wrap break-words text-xl text-[#ffffff]/70">
               <code>
                 <span className="text-[#425d82]">const</span>{" "}

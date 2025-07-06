@@ -11,7 +11,7 @@ const Education = () => {
   const [isOpenOnlineCourse, setisOpenOnlineCourse] = useState(false);
 
   return (
-    <div className="max-w-4xl md:w-auto w-[250px] flex flex-col gap-5 mx-auto">
+    <div className="max-w-4xl flex flex-col gap-5 mx-auto">
       <div className="space-y-4">
         <p className="text-[#6a9955] text-2xl">// Education</p>
         <p className="text-[#425d82] text-4xl font-semibold ">
