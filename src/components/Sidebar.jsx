@@ -98,31 +98,31 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
                 Socials
               </div>
               <div className="flex flex-col gap-1 ml-3 ">
-                <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
+                <a href="https://wa.me/2348109399679?text=Hello%20there%2C%20I%20saw%20your%20portfolio!" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <FaWhatsapp />
                   <p>Whatsapp</p>
-                </div>
-                <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
+                </a>
+                <a href="https://www.linkedin.com/in/henry-ojukwu-2296a0297?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiFqwaA6OTGuKLs87faTmrA%3D%3D" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <SlSocialLinkedin />
                   <p>Linkedin</p>
-                </div>
+                </a>
                 <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <FaXTwitter />
 
                   <p>Twitter</p>
                 </div>
-                <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
+                <a href="mailto:htechsolutionz@gmail.com" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <MdOutlineEmail />
                   <p>Email</p>
-                </div>
+                </a>
                 <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <PiTiktokLogo />
                   <p>Tiktok</p>
                 </div>
-                <div className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
+                <a href="https://github.com/Htech00" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <FaGithub />
                   <p>Github</p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
