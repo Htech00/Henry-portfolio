@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: "Fira Code", monospace;
+
+}
+
+.font-mono {
+  font-family: "Fira Mono", monospace;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: pulse-cursor 2s ease-in-out infinite;
+}
+
+@keyframes pulse-cursor {
+  0%   { opacity: 0.3; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.3; }
+}
