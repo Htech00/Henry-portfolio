@@ -42,7 +42,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         <div className="bg-[#333333] w-12 flex flex-col items-center py-4 space-y-6 text-xl ">
           <div>
             <GiHamburgerMenu
-              className="cursor-pointer"
+              className="cursor-pointer hidden min-[531px]:block"
               onClick={() => {
                 setShowExplorer((prev) => !prev);
               }}
@@ -67,7 +67,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         </div>
         {/* Explorer Panel (toggles) */}
         {showExplorer && (
-          <div className="w-48 bg-[#202020] p-2 text-sm transition-all duration-300 ease-in-out">
+          <div className="w-48 bg-[#202020] p-2 text-sm transition-all duration-300 ease-in-out hidden min-[531px]:block">
             <div></div>
             <p className="mb-4"> EXPLORER</p>
             <div className="flex gap-3items-center mb-2">

@@ -93,8 +93,8 @@ function App() {
           path="/developer"
           element={
             isAuthorized ? (
-              <div className="flex flex-col md:flex-col h-screen md:overflow-hidden">
-                <div className="flex md:flex-row h-screen md:overflow-hidden">
+              <div className="flex flex-col md:flex-col h-screen  md:overflow-hidden">
+                <div className="flex md:flex-row h-screen  overflow-hidden">
                   <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
                   <div className="flex-1 flex flex-col">
                     <TopBar />
