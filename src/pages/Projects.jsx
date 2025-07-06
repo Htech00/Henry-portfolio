@@ -3,6 +3,8 @@ import worldApp from "../assets/worldapp.jpg";
 import spaceship from "../assets/spaceship.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import portfolioImage from "../assets/henryportfolio.jpg";
+
 
 const projects = [
   {
