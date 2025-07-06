@@ -47,6 +47,7 @@ const Projects = () => {
           <p className="text-[#425d82] text-3xl sm:text-4xl font-semibold">
             My Projects
           </p>
+          <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full"></div>
           <p className="text-gray-600 mt-2 text-sm sm:text-base">
             A glimpse into some of the projects I’ve recently brought to life
           </p>

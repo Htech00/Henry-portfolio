@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const skills = [
   { name: "React", level: 90 },
@@ -29,7 +30,77 @@ const otherTechnologies = [
   "Jquery",
 ];
 
+
 const Skills = () => {
+
+    useEffect(() => {
+   ScrollReveal().reveal(".partners",{
+      duration: 1500,
+      origin: "left",
+      distance: "800px",
+      delay: 500,
+      easing: "ease-in-out",
+      opacity: 0,
+    });
+
+     ScrollReveal().reveal(".elipse",{
+      duration: 200,
+      origin: "left",
+      distance: "800px",
+      delay: 500,
+      easing: "ease-in-out",
+      opacity: 0,
+    }); 
+    
+    ScrollReveal().reveal(".card",{
+      duration: 500,
+      origin: "right",
+      distance: "200px",
+      delay: 1000,
+      easing: "ease-in-out",
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal(".laptop",{
+      duration: 800,
+      origin: "top",
+      distance: "100px",
+      delay: 500,
+      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal(".hotspot",{
+      duration: 800,
+      origin: "right",
+      distance: "100px",
+      delay: 500,
+      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      opacity: 0,
+    });
+
+     ScrollReveal().reveal(".watch",{
+      duration: 800,
+      origin: "right",
+      distance: "100px",
+      delay: 500,
+      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      opacity: 0,
+    });
+
+    ScrollReveal().reveal(".diamond",{
+      duration: 800,
+      origin: "bottom",
+      distance: "100px",
+      delay: 500,
+      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      opacity: 0,
+    });
+
+
+},[])
+
+
   return (
     <div
       className="w-full bg-[linear-gradient(to_right,rgba(66,93,130,0.2),rgba(255,255,255,0.2))] py-10 px-4 sm:px-6 lg:px-8 scroll-mt-[80px] sm:scroll-mt-[100px]"
@@ -38,15 +109,18 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto text-gray-800">
         {/* Heading */}
         <div className="text-center mb-10">
-          <p className="text-[#425d82] text-3xl sm:text-4xl font-semibold">My Skills</p>
+          <p className="text-[#425d82] text-3xl sm:text-4xl font-semibold">
+            My Skills
+          </p>
+          <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full"></div>
         </div>
 
         {/* Skill Cards */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="py-6 px-6 shadow-md rounded-xl bg-white"
+              className="py-6 px-6 shadow-md rounded-xl bg-white elipse"
             >
               <div className="font-semibold mb-6 flex justify-between">
                 <span>{skill.name}</span>

@@ -282,8 +282,8 @@ const Education = () => {
             developer conferences. This ongoing learning helps me sharpen my
             skills and adapt quickly in a fast-moving tech landscape.
           </p>
-          <button className="bg-[#6a9955] py-2 px-4 rounded-md hover:bg-[#6a9955]/70 cursor-pointer">
-            <div className="text-white flex gap-2 items-center">
+          <button className="bg-[#6a9955] hidden md:inline py-2 px-4 rounded-md hover:bg-[#6a9955]/70 cursor-pointer">
+            <div className="text-white  flex gap-2 items-center">
               <FiMessageSquare className="text-[18px]" />
               <p>Do you want to know more about my education?</p>
             </div>

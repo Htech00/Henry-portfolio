@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import RootLayout from "./rootlayout/RootLayout";
 import { Navigate } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import MobileFooter from "./components/MobileFooter";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -105,6 +106,9 @@ function App() {
                 </div>
                 <div className="md:inline hidden">
                   <Footer />
+                </div>
+                <div className="md:hidden inline">
+                  <MobileFooter />
                 </div>
               </div>
             ) : (

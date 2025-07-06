@@ -23,18 +23,9 @@ const AboutMe = () => {
 
         {/* Paragraph & Signature */}
         <div className="flex flex-col gap-6 w-full md:w-1/2 text-gray-600">
-          <p className="text-justify leading-relaxed">
-            I’m a dedicated Software Engineer and Web Developer with over 11 years of experience,
-            having transitioned into tech in 2012. My foundation was shaped through close mentorship,
-            helping me develop strong skills in building scalable software and dynamic web applications.
-            <br /><br />
-            I have hands-on experience with a wide range of technologies including Java, PHP (Laravel, CodeIgniter),
-            JavaScript, jQuery, CSS, and Tailwind CSS—giving me the flexibility to handle both frontend and backend development.
-            <br /><br />
-            Throughout my career, I’ve led and contributed to impactful projects like e-commerce platforms, banking systems,
-            account management tools, and healthcare applications. I’m driven by the challenge of solving real-world problems
-            and creating digital solutions that deliver both technical excellence and business value.
-          </p>
+         <p>
+         I am a seasoned Software Engineer and Web Developer with over a decade of hands-on experience in building scalable, secure, and user-focused digital solutions. My expertise spans across Java, PHP, JavaScript, React, Node.js, Laravel, and CodeIgniter. I specialize in transforming complex business requirements into efficient, high-performing applications that align technology with strategic goals across diverse industries.
+         </p>
 
           <img src={signImg} alt="signature" className="w-36 opacity-50" />
         </div>

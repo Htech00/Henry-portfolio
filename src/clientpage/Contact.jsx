@@ -12,6 +12,7 @@ const Contact = () => {
         <h2 className="text-3xl sm:text-4xl text-center font-semibold text-[#425d82] mb-10">
           Get In Touch
         </h2>
+        <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full"></div>
 
         <div className="bg-white rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-2">
           {/* Left: Contact Info */}

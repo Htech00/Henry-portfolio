@@ -20,7 +20,8 @@ const TopBar = () => {
         </div>
 
         {/* Title */}
-        <span className="text-gray-300">VS Code Portfolio</span>
+        <span className="text-gray-300 hidden md:inline">VS Code Portfolio</span>
+        <span className="text-gray-300 inline md:hidden">VS Code</span>
       </div>
       
 

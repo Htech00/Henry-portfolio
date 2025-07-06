@@ -12,7 +12,7 @@ import { LuBellDot } from "react-icons/lu";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { CgRemote } from "react-icons/cg";
 
-const Footer = () => {
+const MobileFooter = () => {
   return (
     <div className="flex  justify-between items-center px-4 py-1 text-sm bg-[#425d82] text-blue-300 font-mono">
       {/* Left Side */}
@@ -28,24 +28,15 @@ const Footer = () => {
           <IoWarningOutline />
           <span>0</span>
         </div>
-        <div className="flex items-center gap-1">
-          <VscDebugAlt />
-        </div>
       </div>
 
       {/* Right Side */}
       <div className="flex items-center gap-4">
-        <p>Ln 25, Col 28</p>
-        <p>Spaces: 4</p>
         <div className="flex items-center gap-0.5">
           <BiCodeCurly />
           <p>JavaScript</p>
         </div>
 
-        <div className="flex items-center gap-0.5">
-          <CgLivePhoto />
-          <p>Go Live</p>
-        </div>
         <div className="flex items-center gap-0.5">
           <IoCheckmarkDone />
           <p>Prettier</p>
@@ -60,4 +51,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MobileFooter;

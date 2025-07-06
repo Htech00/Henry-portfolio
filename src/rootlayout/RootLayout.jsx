@@ -13,7 +13,7 @@ import Education from '../clientcomponents/Education'
 
 const RootLayout = () => {
   return (
-    <div className='bg-white scroll-mt-[80px] sm:scroll-mt-[100px] '>
+    <div className='bg-white scroll-mt-[80px] sm:scroll-mt-[100px] font-client '>
       <Navbar />
       <Home />
       <About />
