@@ -23,6 +23,15 @@ const projects = [
     gitHubLink: "https://github.com/Htech00/countryworldapp",
     projectLink: "https://countryworldapp.vercel.app/",
   },
+  {
+      name: "Henry Portfolio",
+      image: portfolioImage,
+      description:
+        "Ojukwu Henry’s portfolio is a polished and professional web presence that effectively showcases his identity and expertise as a Fullstack Web Developer. Designed with clarity and user experience in mind, the homepage immediately captures attention through its clean layout and well-organized structure.",
+      tool: ["React", "Tailwind Css", "HTML"],
+      gitHubLink: "https://github.com/Htech00/Henry-portfolio",
+      projectLink: "https://henry-portfolio-henna.vercel.app/",
+    }
 ];
 
 const Projects = () => {
