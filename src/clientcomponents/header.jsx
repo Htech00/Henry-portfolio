@@ -19,7 +19,7 @@ const Header = () => {
             alt="Avatar"
             className="w-10 h-10 rounded-full cursor-pointer"
           />
-          <span className="text-xl font-semibold bg-[linear-gradient(to_right,red,white)] bg-clip-text text-transparent">
+          <span className="text-xl font-semibold bg-[linear-gradient(to_right,red,white)] bg-clip-text text-transparent hidden md:inline">
             Henry.Ojukwu Portfolio
           </span>
         </div>
