@@ -128,7 +128,7 @@ const Skills = () => {
               </div>
               <div className="w-full h-2 bg-gray-200 rounded-full">
                 <div
-                  className="h-2 rounded-full bg-[#425d82]"
+                  className="h-2 rounded-full bg-blue-500"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
