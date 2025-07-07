@@ -58,10 +58,13 @@ const HomePage = () => {
                 <span className="text-[#ffffff]/70">{"};"}</span>
               </code>
             </pre>
-            <div className="flex items-center  gap-2 mx-auto  px-4 py-2 w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold">
-              Download CV
-              <CgSoftwareDownload className="text-[30px]" />
-            </div>
+            <button className="flex items-center  gap-2 mx-auto  px-4 py-2 w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold">
+              <div className="flex items-center gap-2">
+                <p>Download CV</p>
+                <CgSoftwareDownload className="text-[30px]" />
+              </div>
+              
+            </button>
           </div>
         </div>
 
