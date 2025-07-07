@@ -5,6 +5,22 @@ import { FaChevronDown } from "react-icons/fa";
 
 const TopBar = () => {
 
+   const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("dark-mode")) || false;
+  });
+
+  if (darkMode) {
+    document.body.classList.remove("light-mode");
+  } else {
+    document.body.classList.add("light-mode");
+  }
+
+  const moon = darkMode ? (
+    <IoSunnyOutline className="w-3 sm:w-4" />
+  ) : (
+    <IoMoon className="w-3 sm:w-4" />
+  );
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
