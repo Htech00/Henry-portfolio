@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import { GoMoon } from "react-icons/go";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { IoMoonOutline, IoMoon, IoSunnyOutline } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa";
 
 const TopBar = () => {
 
-   const [darkMode, setDarkMode] = useState(() => {
-    return JSON.parse(localStorage.getItem("dark-mode")) || false;
+   const [lightMode, setLightMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("light-mode")) || false;
   });
 
-  if (darkMode) {
-    document.body.classList.remove("light-mode");
+  if (lightMode) {
+    document.body.classList.remove("dark-mode");
   } else {
-    document.body.classList.add("light-mode");
+    document.body.classList.add("dark-mode");
   }
 
-  const moon = darkMode ? (
-    <IoSunnyOutline className="w-3 sm:w-4" />
+  const sun = lightMode ? (
+    <IoMoonOutline className="w-3 sm:w-4" />
   ) : (
-    <IoMoon className="w-3 sm:w-4" />
+    <IoSunnyOutline className="w-3 sm:w-4" />
   );
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -43,9 +43,26 @@ const TopBar = () => {
 
       {/* Right side (Theme, Tabs, etc. - placeholder for now) */}
       <div className="flex items-center gap-3 text-gray-400 text-xs cursor-pointer">
-        <span className="px-2 py-1 rounded bg-[#333]">
-          <MdOutlineLightMode className="text-xl" />
-        </span>
+        <div
+        onClick={() => {
+          document.body.classList.toggle("dark-mode");
+          setLightMode(!lightMode);
+
+          if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("light-mode", JSON.stringify(false));
+          } else {
+            localStorage.setItem("light-mode", JSON.stringify(true));
+          }
+        }}
+        className="flex items-center gap-2 cursor-pointer"
+      >
+        {sun}
+        <p className="sm:text-[16px] text-[12px] font-semibold">
+          {lightMode ? "Dark Mode" : "Light Mode"}
+        </p>
+      </div>
+
+
         {/* =========== Client view ============= */}
       <div className="flex relative">
               <button
