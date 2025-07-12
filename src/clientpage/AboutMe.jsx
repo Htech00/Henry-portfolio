@@ -16,9 +16,9 @@ const AboutMe = () => {
           <p className="font-semibold text-gray-500">
             I really love to create amazing products.
           </p>
-          <button className="bg-red-600 hover:bg-red-700 transition-colors py-3 px-6 w-fit text-sm text-white font-bold rounded-lg">
+          <a href="/public/Henry  Cv.pdf" className="bg-red-600 hover:bg-red-700 transition-colors py-3 px-6 w-fit text-sm text-white font-bold rounded-lg">
             Download CV <i className="fa fa-download ml-2"></i>
-          </button>
+          </a>
         </div>
 
         {/* Paragraph & Signature */}
