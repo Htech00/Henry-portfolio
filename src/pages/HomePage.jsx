@@ -58,7 +58,7 @@ const HomePage = () => {
                 <span className="text-[#ffffff]/70">{"};"}</span>
               </code>
             </pre>
-            <a href="/public/Henry  Cv.pdf" className="flex items-center  gap-2 mx-auto  px-4 py-2 md:w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold w-[200px] justify-center ">
+            <a href="/Henry  Cv.pdf" className="flex items-center  gap-2 mx-auto  px-4 py-2 md:w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold w-[200px] justify-center ">
               <div className="flex items-center gap-2">
                 <p>Download CV</p>
                 <CgSoftwareDownload className="text-[30px]" />
