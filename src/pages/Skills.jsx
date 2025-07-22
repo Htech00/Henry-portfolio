@@ -40,52 +40,57 @@ const otherSkills = [
 
 const Skills = () => {
   return (
-    <div className=" md:w-[850px] mx-auto ">
+    <div 
+    className=" md:w-[850px] mx-auto "
+    style={{
+        color: "var(--text-main)"
+    }}
+    >
       <div className="flex flex-col">
         <p className="text-[#6a9955] text-2xl">// Skills</p>
         <p className="text-[#425d82] text-4xl font-semibold ">
           Technical Proficiency
         </p>
         <div className=" rounded-md p-4 mb-6 border border-[#3c3c3c] font-mono">
-          <pre className="whitespace-pre-wrap break-words text-[16px] text-[#ffffff]/70">
+          <pre className="whitespace-pre-wrap break-words text-[16px]">
             <code>
               <span className="text-[#425d82]">const</span>{" "}
               <span className="text-[#3691c5]">developerSkills</span>{" "}
-              <span className="text-[#ffffff]/70">= {"{"}</span>
+              <span className="">= {"{"}</span>
               {"\n"}
               &nbsp;&nbsp;<span className="text-[#425d82]">frontend</span>:
               <span className="text-[#ce9178]">
-                &nbsp;<span className="text-[#ffffff]/70">[</span>'React'
-                <span className="text-[#ffffff]/70">,</span> 'Tailwind'
-                <span className="text-[#ffffff]/70">,</span> 'Javascript'
-                <span className="text-[#ffffff]/70">]</span>
+                &nbsp;<span className="">[</span>'React'
+                <span className="">,</span> 'Tailwind'
+                <span className="">,</span> 'Javascript'
+                <span className="">]</span>
               </span>
               ,{"\n"}
               &nbsp;&nbsp;<span className="text-[#425d82]">backend</span>:
               <span className="text-[#ce9178]">
-                &nbsp;<span className="text-[#ffffff]/70">[</span>'PHP'
-                <span className="text-[#ffffff]/70">,</span> 'Node.js'
-                <span className="text-[#ffffff]/70">,</span> 'Express'
-                <span className="text-[#ffffff]/70">,</span>'MongoDB'
-                <span className="text-[#ffffff]/70">]</span>
+                &nbsp;<span className="">[</span>'PHP'
+                <span className="">,</span> 'Node.js'
+                <span className="">,</span> 'Express'
+                <span className="">,</span>'MongoDB'
+                <span className="">]</span>
               </span>
               ,{"\n"}
               &nbsp;&nbsp;<span className="text-[#425d82]">devOps</span>:
               <span className="text-[#ce9178]">
-                &nbsp;<span className="text-[#ffffff]/70">[</span>'Git'
-                <span className="text-[#ffffff]/70">,</span> 'Vercel'
-                <span className="text-[#ffffff]/70">,</span> Netlify
-                <span className="text-[#ffffff]/70">]</span>
+                &nbsp;<span className="">[</span>'Git'
+                <span className="">,</span> 'Vercel'
+                <span className="">,</span> Netlify
+                <span className="">]</span>
               </span>
               ,{"\n"}
               &nbsp;&nbsp;<span className="text-[#425d82]">other</span>:
               <span className="text-[#ce9178]">
-                &nbsp;<span className="text-[#ffffff]/70">[</span>'Testing'
-                <span className="text-[#ffffff]/70">,</span> 'Debugging'
-                <span className="text-[#ffffff]/70">]</span>
+                &nbsp;<span className="">[</span>'Testing'
+                <span className="">,</span> 'Debugging'
+                <span className="">]</span>
               </span>
               {"\n"}
-              <span className="text-[#ffffff]/70">{"}"}</span>
+              <span className="">{"}"}</span>
             </code>
           </pre>
         </div>
@@ -101,9 +106,9 @@ const Skills = () => {
             </p>
             {frontEnd.map(({ name, percent, color }, index) => (
               <div key={index} className="mb-4">
-                <div className="flex justify-between text-gray-300 font-bold text-sm mb-1">
+                <div className="flex justify-between  font-bold text-sm mb-1">
                   <p>{name}</p>
-                  <p className="text-gray-300">{percent}%</p>
+                  <p className="">{percent}%</p>
                 </div>
                 <div className="w-full bg-gray-700 h-2 rounded">
                   <div
@@ -117,16 +122,16 @@ const Skills = () => {
 
           {/* Backend Development */}
 
-          <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c] text-white w-full max-w-md font-mono shadow-md ">
+          <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c] w-full max-w-md font-mono shadow-md ">
             <p className="text-[#3691c5] text-lg mb-4 font-semibold">
               // Backend Development
             </p>
 
             {backEnd.map(({ name, percent, color }, index) => (
               <div key={index} className="mb-4">
-                <div className="flex justify-between text-gray-300 font-bold text-sm mb-1">
+                <div className="flex justify-between  font-bold text-sm mb-1">
                   <p>{name}</p>
-                  <p className="text-gray-300">{percent}%</p>
+                  <p>{percent}%</p>
                 </div>
                 <div className="w-full bg-gray-700 h-2 rounded">
                   <div
@@ -146,9 +151,9 @@ const Skills = () => {
             </p>
             {devOps.map(({ name, percent, color }, index) => (
               <div key={index} className="mb-4">
-                <div className="flex justify-between text-gray-300 font-bold text-sm mb-1">
+                <div className="flex justify-between  font-bold text-sm mb-1">
                   <p>{name}</p>
-                  <p className="text-gray-300">{percent}%</p>
+                  <p >{percent}%</p>
                 </div>
                 <div className="w-full bg-gray-700 h-2 rounded">
                   <div
@@ -162,16 +167,16 @@ const Skills = () => {
 
           {/* // Other Skills*/}
 
-          <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c] text-white w-full max-w-md font-mono shadow-md ">
+          <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c]  w-full max-w-md font-mono shadow-md ">
             <p className="text-[#3691c5] text-lg mb-4 font-semibold">
               // Other Skills
             </p>
 
             {otherSkills.map(({ name, percent, color }, index) => (
               <div key={index} className="mb-4">
-                <div className="flex justify-between text-gray-300 font-bold text-sm mb-1">
+                <div className="flex justify-between  font-bold text-sm mb-1">
                   <p>{name}</p>
-                  <p className="text-gray-300">{percent}%</p>
+                  <p >{percent}%</p>
                 </div>
                 <div className="w-full bg-gray-700 h-2 rounded">
                   <div

@@ -14,7 +14,12 @@ const skills = [
 
 const AboutMe = () => {
   return (
-    <div className=" max-w-4xl mx-auto">
+    <div 
+    className=" max-w-4xl mx-auto"
+    style={{
+        color: "var(--text-main)"
+    }}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="space-y-8 mb-8 items-center">
           <div className="space-y-4">
@@ -24,11 +29,11 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="md:w-[432px]  rounded-md p-4 mb-6 border border-[#3c3c3c] font-mono">
-            <pre className="whitespace-pre-wrap break-words text-[16px] text-[#ffffff]/70">
+            <pre className="whitespace-pre-wrap break-words text-[16px]">
               <code>
                 <span className="text-[#425d82]">const</span>{" "}
                 <span className="text-[#3691c5]">aboutMe</span>{" "}
-                <span className="text-[#ffffff]/70">= {"{"}</span>
+                <span className="">= {"{"}</span>
                 {"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:
                 <span className="text-[#ce9178]">'Henry Ojukwu'</span>,{"\n"}
@@ -48,7 +53,7 @@ const AboutMe = () => {
                 ,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">
                   experience
-                </span>: <span className="text-[#ffffff]/70">[</span>
+                </span>: <span className="">[</span>
                 <span className="text-[#ce9178]">
                   {"\n"}&nbsp;&nbsp;'Internship at Jobitech (2015)'
                 </span>
@@ -59,11 +64,11 @@ const AboutMe = () => {
                 </span>
                 ]{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">skills</span>:{" "}
-                <span className="text-[#ffffff]/70">{"{"}</span>
+                <span className="">{"{"}</span>
                 {"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">
                   languages
-                </span>: <span className="text-[#ffffff]/70">[</span>
+                </span>: <span className="">[</span>
                 <span className="text-[#ce9178]">
                   {"\n"}&nbsp;&nbsp;'Basic'
                 </span>
@@ -73,14 +78,14 @@ const AboutMe = () => {
                 <span className="text-[#ce9178]">'Ajax, JavaScript'</span>,{" "}
                 <span className="text-[#ce9178]">&nbsp;&nbsp;'HTML'</span>,{" "}
                 <span className="text-[#ce9178]">'CSS'</span>
-                <span className="text-[#ffffff]/70">
+                <span className="">
                   {"\n"}
                   &nbsp;&nbsp;{"}"}
                 </span>
                 ,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">
                   frameworks
-                </span>: <span className="text-[#ffffff]/70">[</span>
+                </span>: <span className="">[</span>
                 {"\n"}
                 <span className="text-[#ce9178]">
                   &nbsp;&nbsp;'React'
@@ -91,19 +96,19 @@ const AboutMe = () => {
                   &nbsp;&nbsp;'Node.js, JavaScript'
                 </span>
                 , <span className="text-[#ce9178]">'JQuery'</span>,{" "}
-                <span className="text-[#ffffff]/70">
+                <span className="">
                   {"\n"}
                   &nbsp;&nbsp;]
                 </span>
                 ,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">tools</span>:{" "}
-                <span className="text-[#ffffff]/70">[</span>
+                <span className="">[</span>
                 {"\n"}
                 <span className="text-[#ce9178]">&nbsp;&nbsp;'Git'</span>,{" "}
                 <span className="text-[#ce9178]">'Vs Code'</span>,{" "}
                 <span className="text-[#ce9178]">'Sublime Text'</span>
                 {"\n"}
-                &nbsp;&nbsp;<span className="text-[#ffffff]/70">]</span>,{"\n"}
+                &nbsp;&nbsp;<span className="">]</span>,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">bio</span>:{" "}
                 <span className="text-[#ce9178]">
                   'I’m a curious and passionate web &nbsp;&nbsp;developer with
@@ -113,7 +118,7 @@ const AboutMe = () => {
                   and &nbsp;&nbsp;technologies.'
                 </span>
                 {"\n"}
-                <span className="text-[#ffffff]/70">{"};"}</span>
+                <span className="">{"};"}</span>
               </code>
             </pre>
           </div>
@@ -130,7 +135,7 @@ const AboutMe = () => {
             <p className="text-[#3691c5] text-lg mb-4 font-semibold">
               // About Me
             </p>
-            <p className="text-gray-300">
+            <p className="">
               I'm a passionate Full Stack Developer with expertise in building
               modern web applications. With over 1 years of experience, I
               specialize in creating responsive, user-friendly interfaces and
@@ -155,9 +160,9 @@ const AboutMe = () => {
           </p>
           {skills.map((skill, index) => (
             <div key={index} className="mb-4">
-              <div className="flex justify-between text-gray-300 font-bold text-sm mb-1">
+              <div className="flex justify-between  font-bold text-sm mb-1">
                 <p>{skill.name}</p>
-                <p className="text-gray-300">{skill.percent}%</p>
+                <p className="">{skill.percent}%</p>
               </div>
               <div className="w-full bg-gray-700 h-2 rounded">
                 <div
@@ -170,13 +175,13 @@ const AboutMe = () => {
         </div>
 
         {/* Personal Interest */}
-        <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c] text-white w-full max-w-md font-mono shadow-md ">
+        <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c] w-full max-w-md font-mono shadow-md ">
           <p className="text-[#3691c5] text-lg mb-4 font-semibold">
             // Personal Interest
           </p>
 
           <div>
-            <ul className="list-disc list-inside text-gray-300 flex flex-col gap-4">
+            <ul className="list-disc list-inside  flex flex-col gap-4">
               <li>Contributing to Open Source Projects</li>
               <li>Exploring and Adopting Emerging Technologies</li>
               <li>Participating in Tech Conferences and Meetups</li>

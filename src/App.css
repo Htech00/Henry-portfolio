@@ -4,11 +4,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --bg-main: #1e1e1e;
+  --text-main: #ffffffb3;
+  --text-heading: #425d82;
+  --text-accent: #6a9955;
+   --placeholder-color: #cccccc; 
+}
+
+.light-mode {
+  --bg-main: #ffffff;
+  --text-main: #1a1a1a;
+  --text-heading: #1a365d;
+  --text-accent: #2f855a;
+  --placeholder-color: #666666;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1; /* Ensures it's not faded */
+  transition: color 0.3s ease;
+}
 
 body {
-    font-family: "Fira Code", monospace;
-
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Fira Code", monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .font-mono {
   font-family: "Fira Mono", monospace;

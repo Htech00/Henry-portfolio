@@ -37,11 +37,16 @@ function App() {
   const renderContent = () => {
     if (isLoading) {
       return (
-        <div className="flex mx-auto items-center justify-center mt-50 gap-3">
+        <div 
+        className="flex mx-auto items-center justify-center mt-50 gap-3"
+        style={{
+          color: "var(--text-main)"
+        }}
+        >
           <div role="status">
             <svg
               aria-hidden="true"
-              className="w-16 h-16 text-gray-200 animate-spin dark:text-gray-600 fill-[#425d82]"
+              className="w-16 h-16  animate-spin dark:text-gray-600 fill-[#425d82]"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +61,7 @@ function App() {
               />
             </svg>
           </div>
-          <i className="text-base text-[#ffffff]/50">
+          <i className="text-base ">
             Loading {activeTab}.jsx Page
           </i>
         </div>

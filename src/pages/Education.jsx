@@ -11,23 +11,27 @@ const Education = () => {
   const [isOpenOnlineCourse, setisOpenOnlineCourse] = useState(false);
 
   return (
-    <div className="max-w-4xl flex flex-col gap-5 mx-auto">
+    <div className="max-w-4xl flex flex-col gap-5 mx-auto"
+    style={{
+        color: "var(--text-main)"
+    }}
+    >
       <div className="space-y-4">
         <p className="text-[#6a9955] text-2xl">// Education</p>
         <p className="text-[#425d82] text-4xl font-semibold ">
           Academic Background
         </p>
       </div>
-      <p className="text-white/70 md:w-auto ">
+      <p className=" md:w-auto ">
         My educational journey and continuous learning path
       </p>
 
       <div className=" rounded-md p-4 mb-6 border border-[#3c3c3c] font-mono">
-        <pre className="whitespace-pre-wrap break-words text-[16px] text-[#ffffff]/70">
+        <pre className="whitespace-pre-wrap break-words text-[16px]">
           <code>
             <span className="text-[#425d82]">const</span>{" "}
             <span className="text-[#3691c5]">education</span>{" "}
-            <span className="text-[#ffffff]/70">= {"{"}</span>
+            <span className="">= {"{"}</span>
             {"\n"}
             &nbsp;&nbsp;<span className="text-[#425d82]">schools</span>: &nbsp;[
             {"\n"}
@@ -88,7 +92,7 @@ const Education = () => {
             &nbsp;&nbsp;{"}"}
             {"\n"}
             &nbsp;&nbsp;]{"\n"}
-            <span className="text-[#ffffff]/70">{"};"}</span>
+            <span className="">{"};"}</span>
           </code>
         </pre>
       </div>
@@ -113,7 +117,7 @@ const Education = () => {
         </div>
         {isOpenFormalEdu && (
           <div className="flex flex-col rounded-md p-4 mb-3 border border-[#3c3c3c] font-mono gap-10 ">
-            <div className="flex flex-col text-white/70 border-l-1 border-[#3c3c3c] relative">
+            <div className="flex flex-col  border-l-1 border-[#3c3c3c] relative">
               <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
               <div className="flex justify-between px-6">
                 <h3 className="text-[#3691c5]">Tutor</h3>
@@ -163,7 +167,7 @@ const Education = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col text-white/70 border-l-1 border-[#3c3c3c] relative">
+            <div className="flex flex-col border-l-1 border-[#3c3c3c] relative">
               <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
               <div className="flex justify-between px-6">
                 <h3 className="text-[#3691c5]">Software Developer</h3>
@@ -244,7 +248,7 @@ const Education = () => {
         {isOpenOnlineCourse && (
           <div className="flex flex-col rounded-md p-4 mb-3 border border-[#3c3c3c] font-mono ">
             <div className="md:w-[400px] flex flex-col gap-3 bg-black/30 p-4 rounded-md">
-              <div className="flex justify-between text-[14px] text-white/40">
+              <div className="flex justify-between text-[14px] ">
                 <p className="text-[#3691c5]">
                   Javascript: The Complete Developer's Guide
                 </p>
@@ -256,11 +260,15 @@ const Education = () => {
                   <FaExternalLinkAlt className="text-[14px]" />
                 </a>
               </div>
-              <p className="text-white/70">Udemy</p>
+              <p >Udemy</p>
               <div>
                 <p className="text-[#3691c5]">
                   Instructor:{" "}
-                  <span className="text-white/70">Hitesh Choudhary</span>
+                  <span 
+                  style={{
+                    color: "var(--text-main)"
+                  }}
+                  >Hitesh Choudhary</span>
                 </p>
               </div>
               <div className="flex gap-2 text-[#6a9955]">
@@ -271,7 +279,7 @@ const Education = () => {
           </div>
         )}
       </div>
-      <div className=" rounded-md p-4 mb-6 border border-[#3c3c3c] font-mono text-white/70">
+      <div className=" rounded-md p-4 mb-6 border border-[#3c3c3c] font-mono">
         <div className="space-y-6">
           <p className="text-[#3691c5] text-[20px] font-semibold">
             Continuous Learning

@@ -8,7 +8,12 @@ import { FiMessageSquare } from "react-icons/fi";
 
 const ContactMe = () => {
   return (
-    <div className=" max-w-4xl mx-auto">
+    <div 
+    className=" max-w-4xl mx-auto"
+    style={{
+        color: "var(--text-main)"
+    }}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
         <div className="md:space-y-8 mb-4 items-center">
           <div className="space-y-4">
@@ -16,7 +21,7 @@ const ContactMe = () => {
             <p className="text-[#425d82] text-4xl font-semibold ">
               Get In Touch
             </p>
-            <p className="text-white">
+            <p >
               Have a project in mind? Let's work together!
             </p>
           </div>
@@ -72,18 +77,22 @@ const ContactMe = () => {
         <div className="flex flex-col md:gap-10 gap-4">
           <div className="md:w-[432px]  rounded-md mb-6 border border-[#3c3c3c] font-mono md:mt-40 h-[484px]">
             <div className="bg-[#3f3c3c3f] py-2 px-4">
-              <p className="text-white">Terminal</p>
+              <p >Terminal</p>
             </div>
             <div className="p-4">
-              <div className="leading-[20px] text-white/70">
+              <div className="leading-[20px]">
                 <p>$ init contact-form</p>
                 <p className="text-[#c8f58e]">
                   {">"} Contact form initialized successfully.
                 </p>
               </div>
-              <div className="font-mono text-white/70 flex items-center mt-3 gap-2">
+              <div className="font-mono flex items-center mt-3 gap-2">
                 <p>user@machine:~$</p>
-                <span className="blinking-cursor h-4 w-3 bg-white/70"></span>
+                <span 
+                className="blinking-cursor h-4 w-3 bg-white/70"
+                >
+
+                </span>
               </div>
             </div>
 
@@ -95,7 +104,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-      <div className=" rounded-md p-4 flex flex-col gap-2 mb-8 bg-[#3f3c3c3f] border border-[#3c3c3c] font-mono text-white/70">
+      <div className=" rounded-md p-4 flex flex-col gap-2 mb-8 bg-[#3f3c3c3f] border border-[#3c3c3c] font-mono ">
         <p className="text-[#3691c5]">// Other Ways to Connect</p>
         <div className="grid md:grid-cols-3 grid-cols-1 sm:text-[16px] text-[12px]">
           <div className="flex gap-2 items-center ">
@@ -137,12 +146,12 @@ const ContactMe = () => {
         </div>
       </div>
 
-      <div className=" rounded-md p-6 flex flex-col gap-2 mb-6 bg-[#25d366]/10 border border-[#25d366] font-mono text-white/70">
+      <div className=" rounded-md p-6 flex flex-col gap-2 mb-6 bg-[#25d366]/10 border border-[#25d366] font-mono ">
         <div className="flex text-[20px] items-center gap-4 font-semibold">
           <FiMessageSquare className="text-[#25d366]" />
           <p className="text-[#25d366] ">Whatsapp Me Directly</p>
         </div>
-        <p className="text-white/70">
+        <p>
           For quick responses and real-time communication, feel free to reach
           out to me on WhatsApp.
         </p>

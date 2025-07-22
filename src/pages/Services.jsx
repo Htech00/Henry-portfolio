@@ -11,14 +11,18 @@ import { FaMeetup } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="max-w-4xl flex flex-col gap-5 mx-auto">
+    <div className="max-w-4xl flex flex-col gap-5 mx-auto"
+    style={{
+        color: "var(--text-main)"
+    }}
+    >
       <div className="space-y-4">
         <p className="text-[#6a9955] text-2xl">// Services</p>
         <p className="text-[#425d82] text-4xl font-semibold ">
           Services Rendered
         </p>
       </div>
-      <p className="text-white/70">
+      <p >
         End-to-end development solutions designed to transform your ideas into
         reality
       </p>
@@ -28,7 +32,7 @@ const Services = () => {
               <p className="text-[#425d82] font-semibold text-[18px] ">
                 Web Development
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center mt-4">
                 Developing fast, responsive web applications using modern tools and frameworks.
               </p>
         </div>
@@ -38,7 +42,7 @@ const Services = () => {
               <p className="text-[#a15eaa] font-semibold text-[18px] ">
                 Mobile Development
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center  mt-4">
                 Developing mobile applications that run seamlessly on both iOS and Android platforms.
               </p>
         </div>
@@ -48,7 +52,7 @@ const Services = () => {
               <p className="text-[#90f1f5] font-semibold text-[18px] ">
                 Backend Development
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center  mt-4">
                 Developing fast, responsive web applications using modern tools and frameworks.
               </p>
         </div>
@@ -58,7 +62,7 @@ const Services = () => {
               <p className="text-[#4b632d] font-semibold text-[18px] ">
                 Software Testing
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center mt-4">
                 Identifying bugs and ensuring app reliability through manual and automated testing.
               </p>
           </div>
@@ -68,7 +72,7 @@ const Services = () => {
               <p className="text-[#6e5b05] font-semibold text-center text-[18px] ">
                 Performance Optimization
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center mt-4">
                 Enhancing app speed and efficiency for a smoother user experience.
               </p>
           </div>
@@ -78,7 +82,7 @@ const Services = () => {
               <p className="text-[#faf895] font-semibold text-[18px] ">
                 Consultation
               </p>
-              <p className="text-center text-white/70 mt-4">
+              <p className="text-center mt-4">
                 Providing expert guidance on software solutions, project planning, and technology choices.
               </p>
           </div>
