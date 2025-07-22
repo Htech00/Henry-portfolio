@@ -26,11 +26,11 @@ const HomePage = () => {
             <p className="text-2xl text-[#23eeb1]">{"<Portfolio />"}</p>
           </div>
           <div className="md:w-[432px]  rounded-md p-4 md:mb-6 border border-[#3c3c3c] font-mono">
-            <pre className="whitespace-pre-wrap break-words text-xl text-[#ffffff]/70">
+            <pre className="whitespace-pre-wrap break-words text-xl ">
               <code>
                 <span className="text-[#425d82]">const</span>{" "}
                 <span className="text-[#3691c5]">developer</span>{" "}
-                <span className="text-[#ffffff]/70">= {"{"}</span>
+                <span className="">= {"{"}</span>
                 {"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:{" "}
                 <span className="text-[#ce9178]">'Henry Ojukwu'</span>,{"\n"}
@@ -38,7 +38,7 @@ const HomePage = () => {
                 <span className="text-[#ce9178]">'Full Stack Developer'</span>,
                 {"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">skills</span>:{" "}
-                <span className="text-[#ffffff]/70">[</span>
+                <span className="">[</span>
                 <span className="text-[#ce9178]">'React'</span>,{" "}
                 <span className="text-[#ce9178]">'Laravel'</span>,{" "}
                 <span className="text-[#ce9178]">'Codeignita'</span>,{" "}
@@ -46,7 +46,7 @@ const HomePage = () => {
                 <span className="text-[#ce9178]">'Node.js, JavaScript'</span>,{" "}
                 <span className="text-[#ce9178]">'HTML'</span>,{" "}
                 <span className="text-[#ce9178]">'CSS'</span>
-                <span className="text-[#ffffff]/70">]</span>,{"\n"}
+                <span className="">]</span>,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">
                   passion
                 </span>:{" "}
@@ -55,7 +55,7 @@ const HomePage = () => {
                   interfaces.'
                 </span>
                 {"\n"}
-                <span className="text-[#ffffff]/70">{"};"}</span>
+                <span className="">{"};"}</span>
               </code>
             </pre>
             <a href="/Henry  Cv.pdf" className="flex items-center  gap-2 mx-auto  px-4 py-2 md:w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold w-[200px] justify-center ">
