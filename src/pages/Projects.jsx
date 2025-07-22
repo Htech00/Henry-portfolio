@@ -43,7 +43,7 @@ const Projects = () => {
         <p className="text-[#425d82] text-4xl font-semibold">My Work</p>
       </div>
       <p 
-      className="text-white/70"
+      className=""
       style={{
               color: "var(--text-main)"
             }}
@@ -62,7 +62,7 @@ const Projects = () => {
               className="w-full h-[190px] object-cover rounded-t-md"
               alt={project.name}
             />
-            <div className="p-4 text-white/70 space-y-3">
+            <div className="p-4  space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="font-semibold text-[20px] text-[#425d82]">
                   {project.name}
