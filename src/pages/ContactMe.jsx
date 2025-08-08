@@ -1,18 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import henryimg from "../assets/henry.png";
 import { MdOutlineMail } from "react-icons/md";
 import { BiMailSend } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiMessageSquare } from "react-icons/fi";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const ContactMe = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bg25uoh",
+        "template_zk443yk",
+        form.current,
+        "HRCaWPln68idPpo8d"
+      )
+      .then(
+        (result) => {
+          toast.success("Message sent successfully!");
+          form.current.reset(); // Clear form
+        },
+        (error) => {
+          toast.error("Failed to send message. Try again.");
+        }
+      );
+  };
   return (
-    <div 
-    className=" max-w-4xl mx-auto"
-    style={{
-        color: "var(--text-main)"
-    }}
+    <div
+      className=" max-w-4xl mx-auto"
+      style={{
+        color: "var(--text-main)",
+      }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
         <div className="md:space-y-8 mb-4 items-center">
@@ -21,12 +45,15 @@ const ContactMe = () => {
             <p className="text-[#425d82] text-4xl font-semibold ">
               Get In Touch
             </p>
-            <p >
-              Have a project in mind? Let's work together!
-            </p>
+            <p>Have a project in mind? Let's work together!</p>
           </div>
           <div className="md:w-[432px]  rounded-md p-4 md:mb-6 border border-[#3c3c3c] font-mono">
-            <form action="" className="flex flex-col gap-4 text-[#3691c5]">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              action=""
+              className="flex flex-col gap-4 text-[#3691c5]"
+            >
               <div className="flex gap-1 items-center text-[#3691c5]">
                 <MdOutlineMail />
                 <p>Contact Form</p>
@@ -38,7 +65,9 @@ const ContactMe = () => {
                 <input
                   type="text"
                   id="name"
-                  className="border-[#3c3c3c] border bg-[#3f3c3c3f] rounded-md p-1 placeholder:text-white/70 focus:outline-[#3691c5] focus:outline-2"
+                  name="user_name"
+                  className=" border-[#3c3c3c] border bg-[#3f3c3c3f] rounded-md p-1 placeholder:text-white/70 focus:outline-[#3691c5] focus:outline-2"
+                  required
                   placeholder="John Doe"
                 />
               </div>
@@ -47,9 +76,11 @@ const ContactMe = () => {
                   email:
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
+                  name="user_email"
                   className="border-[#3c3c3c] border bg-[#3f3c3c3f] rounded-md p-1 placeholder:text-white/70 focus:outline-[#3691c5] focus:outline-2"
+                  required
                   placeholder="john@example.com"
                 />
               </div>
@@ -60,7 +91,9 @@ const ContactMe = () => {
                 <textarea
                   type="text"
                   id="message"
+                  name="message"
                   className="border-[#3c3c3c] border bg-[#3f3c3c3f] rounded-md p-1 h-40 resize-none placeholder:text-white/70 focus:outline-[#3691c5] focus:outline-2"
+                  required
                   placeholder="Your message here..."
                 ></textarea>
               </div>
@@ -77,7 +110,7 @@ const ContactMe = () => {
         <div className="flex flex-col md:gap-10 gap-4">
           <div className="md:w-[432px]  rounded-md mb-6 border border-[#3c3c3c] font-mono md:mt-40 h-[484px]">
             <div className="bg-[#3f3c3c3f] py-2 px-4">
-              <p >Terminal</p>
+              <p>Terminal</p>
             </div>
             <div className="p-4">
               <div className="leading-[20px]">
@@ -88,11 +121,7 @@ const ContactMe = () => {
               </div>
               <div className="font-mono flex items-center mt-3 gap-2">
                 <p>user@machine:~$</p>
-                <span 
-                className="blinking-cursor h-4 w-3 bg-white/70"
-                >
-
-                </span>
+                <span className="blinking-cursor h-4 w-3 bg-white/70"></span>
               </div>
             </div>
 

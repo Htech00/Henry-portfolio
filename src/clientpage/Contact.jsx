@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FaTwitter, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bg25uoh",
+        "template_zk443yk",
+        form.current,
+        "HRCaWPln68idPpo8d"
+      )
+      .then(
+        (result) => {
+          toast.success("Message sent successfully!");
+          form.current.reset(); // Clear form
+        },
+        (error) => {
+          toast.error("Failed to send message. Try again.");
+        }
+      );
+  };
   return (
     <div
       id="contact"
@@ -41,37 +65,53 @@ const Contact = () => {
             </ul>
 
             <div className="flex gap-4 mt-6 text-[#425d82] text-xl">
-              <a href="#" aria-label="Twitter"><FaTwitter /></a>
-              <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-              <a href="#" aria-label="GitHub"><FaGithub /></a>
-              <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
+              <a href="#" aria-label="Twitter">
+                <FaTwitter />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <FaLinkedin />
+              </a>
+              <a href="#" aria-label="GitHub">
+                <FaGithub />
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
 
           {/* Right: Form */}
-          <form className="p-8 space-y-5">
+          <form ref={form} onSubmit={sendEmail} className="p-8 space-y-5">
             <div>
               <label className="block text-sm text-gray-700 mb-1">Name</label>
               <input
                 type="text"
+                name="user_name"
                 placeholder="Your name"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82]"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82] text-gray-700 text-[14px]"
+                required
               />
             </div>
             <div>
               <label className="block text-sm text-gray-700 mb-1">Email</label>
               <input
                 type="email"
+                name="user_email"
                 placeholder="your.email@example.com"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82]"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82] text-gray-700 text-[14px]"
+                required
               />
             </div>
             <div>
-              <label className="block text-sm text-gray-700 mb-1">Message</label>
+              <label className="block text-sm text-gray-700 mb-1">
+                Message
+              </label>
               <textarea
                 rows="4"
                 placeholder="Your message"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82]"
+                name="message"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#425d82] text-gray-700 text-[14px]"
+                required
               ></textarea>
             </div>
             <button

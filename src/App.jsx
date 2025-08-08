@@ -18,6 +18,7 @@ import RootLayout from "./rootlayout/RootLayout";
 import { Navigate } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import MobileFooter from "./components/MobileFooter";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -89,6 +90,7 @@ function App() {
 
   return (
     <Router>
+      <Toaster position="top-center"/>
       <Routes>
         <Route
           path="/"

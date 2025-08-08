@@ -19,7 +19,7 @@ const Header = () => {
             alt="Avatar"
             className="w-10 h-10 rounded-full cursor-pointer"
           />
-          <span className="text-xl font-semibold bg-[linear-gradient(to_right,red,white)] bg-clip-text text-transparent hidden md:inline">
+          <span className="text-xl font-semibold bg-gradient-to-r from-[#ff0000] to-[#ffffff] bg-clip-text text-transparent hidden md:inline">
             Henry.Ojukwu Portfolio
           </span>
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
         <div className="relative hidden md:block">
           <button
             onClick={toggleDropdown}
-            className="bg-[linear-gradient(to_right,red,white)] text-black/70 font-semibold px-4 py-2 rounded-md flex items-center gap-1 cursor-pointer"
+            className="bg-gradient-to-r from-[#ff0000] to-[#b30000] text-white font-semibold px-4 py-2 rounded-md flex items-center gap-1 cursor-pointer"
           >
             Client View <FaChevronDown className="text-xs mt-1" />
           </button>
