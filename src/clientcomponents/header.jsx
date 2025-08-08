@@ -108,7 +108,7 @@ const Header = () => {
           <div className="mt-4">
             <button
               onClick={toggleDropdown}
-              className="w-full bg-[linear-gradient(to_right,red,white)] text-black/70 font-semibold px-4 py-2 rounded-md flex items-center justify-between cursor-pointer"
+              className="w-full bg-gradient-to-r from-[#ff0000] to-[#b30000] text-white font-semibold px-4 py-2 rounded-md flex items-center justify-between cursor-pointer"
             >
               Client View <FaChevronDown className="text-xs" />
             </button>
