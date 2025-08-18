@@ -75,7 +75,7 @@ const Home = () => {
     <>
      <Helmet>
         <title>Henry Ojukwu | FullStack Developer</title>
-          <meta name="google-site-verification" content="your-verification-code" />
+          <meta name="google-site-verification" content="uYR4hYwvxqgzMAvIKVfLNb98J3kxRc19H46ac6p7gjY" />
         
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://henry-portfolio-henna.vercel.app/" />
