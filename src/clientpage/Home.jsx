@@ -91,7 +91,7 @@ const Home = () => {
               Hi I'm, ____________
             </p>
             <h1 className="text-[#425d82] text-2xl sm:text-[70px] font-semibold">
-              Ojukwu Henry
+               Henry Ojukwu
             </h1>
 
             <p className="text-sm font-normal text-gray-700">
