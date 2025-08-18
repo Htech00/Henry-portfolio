@@ -19,6 +19,7 @@ import { Navigate } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import MobileFooter from "./components/MobileFooter";
 import { Toaster } from "react-hot-toast";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -38,11 +39,11 @@ function App() {
   const renderContent = () => {
     if (isLoading) {
       return (
-        <div 
-        className="flex mx-auto items-center justify-center mt-50 gap-3"
-        style={{
-          color: "var(--text-main)"
-        }}
+        <div
+          className="flex mx-auto items-center justify-center mt-50 gap-3"
+          style={{
+            color: "var(--text-main)",
+          }}
         >
           <div role="status">
             <svg
@@ -62,9 +63,7 @@ function App() {
               />
             </svg>
           </div>
-          <i className="text-base ">
-            Loading {activeTab}.jsx Page
-          </i>
+          <i className="text-base ">Loading {activeTab}.jsx Page</i>
         </div>
       );
     }
@@ -89,49 +88,56 @@ function App() {
   };
 
   return (
-    <Router>
-      <Toaster position="top-center"/>
-      <Routes>
-        <Route
-          path="/"
-          element={<WhoAreYou setIsAuthorized={setIsAuthorized} />}
-        />
-        <Route
-          path="/developer"
-          element={
-            isAuthorized ? (
-              <div className="flex flex-col md:flex-col h-screen  md:overflow-hidden">
-                <div className="flex md:flex-row h-screen  overflow-hidden">
-                  <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-                  <div className="flex-1 flex flex-col">
-                    <TopBar />
-                    <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-                    <div className="p-4 overflow-auto flex md:flex-col">
-                      {renderContent()}
+    <HelmetProvider>
+      <Router>
+        <Toaster position="top-center" />
+        <Routes>
+          <Route
+            path="/"
+            element={<WhoAreYou setIsAuthorized={setIsAuthorized} />}
+          />
+          <Route
+            path="/developer"
+            element={
+              isAuthorized ? (
+                <div className="flex flex-col md:flex-col h-screen  md:overflow-hidden">
+                  <div className="flex md:flex-row h-screen  overflow-hidden">
+                    <Sidebar
+                      activeTab={activeTab}
+                      setActiveTab={setActiveTab}
+                    />
+                    <div className="flex-1 flex flex-col">
+                      <TopBar />
+                      <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+                      <div className="p-4 overflow-auto flex md:flex-col">
+                        {renderContent()}
+                      </div>
                     </div>
                   </div>
+                  <div className="md:inline hidden">
+                    <Footer />
+                  </div>
+                  <div className="md:hidden inline">
+                    <MobileFooter />
+                  </div>
                 </div>
-                <div className="md:inline hidden">
-                  <Footer />
-                </div>
-                <div className="md:hidden inline">
-                  <MobileFooter />
-                </div>
-              </div>
-            ) : (
-              <Navigate to="/" replace />
-            )
-          }
-        />
+              ) : (
+                <Navigate to="/" replace />
+              )
+            }
+          />
 
-        <Route
-          path="/client"
-          element={isAuthorized ? <RootLayout /> : <Navigate to="/" replace />}
-        />
+          <Route
+            path="/client"
+            element={
+              isAuthorized ? <RootLayout /> : <Navigate to="/" replace />
+            }
+          />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 }
 
