@@ -75,7 +75,6 @@ const Home = () => {
     <>
      <Helmet>
         <title>Henry Ojukwu | FullStack Developer</title>
-          <meta name="google-site-verification" content="uYR4hYwvxqgzMAvIKVfLNb98J3kxRc19H46ac6p7gjY" />
         <meta name="description" content="Fullstack developer skilled in building responsive, scalable web applications. Passionate about clean code, intuitive UI/UX, and solving real-world problems using modern JavaScript, React, Node.js, and databases." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://henry-portfolio-henna.vercel.app/" />
