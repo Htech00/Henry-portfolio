@@ -2,6 +2,7 @@ import React from "react";
 import worldApp from "../assets/worldapp.jpg";
 import spaceship from "../assets/spaceship.jpg";
 import portfolioImage from "../assets/henryportfolio.jpg";
+import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import goalWebImage from "../assets/goalweb.jpg"
@@ -42,6 +43,16 @@ const projects = [
     tool: ["React", "Tailwind Css", "HTML"],
     gitHubLink: "https://github.com/Htech00/Henry-portfolio",
     projectLink: "https://henry-portfolio-henna.vercel.app/",
+  },
+
+  {
+    name: "Admin Dashboard – Tidoy Booking App",
+    image: tidoyImage,
+    description:
+      "I developed an Admin Dashboard for the Tidoy Booking App, a property management platform designed to handle and monitor data related to hotels, apartments, and villas.",
+    tool: ["React", "Tailwind Css", "HTML", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Socket.io"],
+    gitHubLink: "https://github.com/Htech00/admin-booking",
+    projectLink: "https://admin-booking-jade.vercel.app/",
   }
 ];
 
