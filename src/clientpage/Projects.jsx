@@ -5,7 +5,8 @@ import portfolioImage from "../assets/henryportfolio.jpg";
 import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import goalWebImage from "../assets/goalweb.jpg"
+import goalWebImage from "../assets/goalweb.jpg";
+import ams from "../assets/amsImage.jpg";
 
 const projects = [
   {
@@ -26,15 +27,15 @@ const projects = [
     gitHubLink: "https://github.com/Htech00/countryworldapp",
     projectLink: "https://countryworldapp.vercel.app/",
   },
-    {
-      name: "Goal App",
-      image: goalWebImage,
-      description:
-        "The goal app is a simple task manager, much like a to-do list, helping users set, track, and achieve goals easily.",
-      tool: ["React", "Tailwind Css", "Node.js", "Express.js","Mongoose"],
-      gitHubLink: "https://github.com/Htech00/goalweb_frontend",
-      projectLink: "https://goalweb-frontend.vercel.app",
-    },
+  {
+    name: "Goal App",
+    image: goalWebImage,
+    description:
+      "The goal app is a simple task manager, much like a to-do list, helping users set, track, and achieve goals easily.",
+    tool: ["React", "Tailwind Css", "Node.js", "Express.js", "Mongoose"],
+    gitHubLink: "https://github.com/Htech00/goalweb_frontend",
+    projectLink: "https://goalweb-frontend.vercel.app",
+  },
   {
     name: "Henry Portfolio",
     image: portfolioImage,
@@ -50,10 +51,29 @@ const projects = [
     image: tidoyImage,
     description:
       "I developed an Admin Dashboard for the Tidoy Booking App, a property management platform designed to handle and monitor data related to hotels, apartments, and villas.",
-    tool: ["React", "Tailwind Css", "HTML", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Socket.io"],
+    tool: [
+      "React",
+      "Tailwind Css",
+      "HTML",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary",
+      "Socket.io",
+    ],
     gitHubLink: "https://github.com/Htech00/admin-booking",
     projectLink: "https://admin-booking-jade.vercel.app/",
-  }
+  },
+
+  {
+    name: "Catholic Diocese of Ondo – Financial Management System",
+    image: ams,
+    description:
+      "The Catholic Diocese of Ondo Monthly Returns System is a robust account management web application designed to efficiently manage and monitor all financial transactions within the diocese. The system provides a comprehensive solution for tracking income, expenditures, and administrative activities, ensuring transparency, accountability, and ease of financial reporting.",
+    tool: ["PHP", "CSS", "HTML", "AJAX", "JQUEY", "MYSQL"],
+    gitHubLink: "https://github.com/Htech00/account-management-ondo-diocese",
+    projectLink: "",
+  },
 ];
 
 const Projects = () => {
