@@ -72,7 +72,7 @@ const projects = [
       "The Catholic Diocese of Ondo Monthly Returns System is a robust account management web application designed to efficiently manage and monitor all financial transactions within the diocese. The system provides a comprehensive solution for tracking income, expenditures, and administrative activities, ensuring transparency, accountability, and ease of financial reporting.",
     tool: ["PHP", "CSS", "HTML", "AJAX", "JQUEY", "MYSQL"],
     gitHubLink: "https://github.com/Htech00/account-management-ondo-diocese",
-    projectLink: "",
+    projectLink: "#",
   },
 ];
 
