@@ -20,7 +20,6 @@ const RootLayout = () => {
       <Services />
       <Skills />
       <Projects />
-      <Experience />
       <Education/>
       <Contact />
       <Footer />

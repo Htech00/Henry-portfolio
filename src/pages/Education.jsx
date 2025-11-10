@@ -106,7 +106,7 @@ const Education = () => {
         >
           <div className="flex items-center gap-2">
             <FaGraduationCap className="text-[28px]" />
-            <span>Formal Education</span>
+            <span>Work Experience</span>
           </div>
 
           <MdKeyboardArrowDown
@@ -220,6 +220,27 @@ const Education = () => {
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">Laravel</p>
                 </div>
               </div>
+            </div>
+            <div className="flex flex-col border-l-1 border-[#3c3c3c] relative">
+              <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
+              <div className="flex justify-between px-6">
+                <h3 className="text-[#3691c5]">Backend Developer</h3>
+                <div className="flex items-center gap-2 text-[#6a9955]">
+                  <CiCalendar className="text-[22px]" />
+                  <p>2025-Present</p>
+                </div>
+              </div>
+              <h3 className="px-6 mb-3">
+                SapphireCredit
+              </h3>
+
+              <div className="px-6 mb-3">
+                <p>
+                  I developed and maintained Laravel-based backend systems integrating Remita APIs for loan mandates and repayments, automated financial workflows to improve processing accuracy and reduce manual intervention, optimized MySQL databases for performance and reliability, managed background jobs and queues for high-volume transaction processing, and ensured secure, efficient communication between the Vue.js frontend and backend services.
+                </p>
+              </div>
+              
+              
             </div>
           </div>
         )}

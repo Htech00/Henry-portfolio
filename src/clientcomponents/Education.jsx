@@ -32,8 +32,15 @@ const educationData = [
     institution: "Taisolarin University of Education",
     url: "#",
     years: "2018 – 2022",
-    description:
-      "A Student",
+    description: "Bachelor of Science Degree in Business Education and Accounting",
+  },
+
+  {
+    title: "Backend Developer",
+    institution: "SapphireCredit",
+    url: "#",
+    years: "2025 – Present",
+    description: "I developed and maintained Laravel-based backend systems integrating Remita APIs for loan mandates and repayments, automated financial workflows to improve processing accuracy and reduce manual intervention, optimized MySQL databases for performance and reliability, managed background jobs and queues for high-volume transaction processing, and ensured secure, efficient communication between the Vue.js frontend and backend services.",
   },
   
 ];
@@ -48,7 +55,7 @@ const Education = () => {
         {/* Section Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-semibold text-[#425d82]">
-            Education & Certifications
+            Education & Experience
           </h2>
           <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full"></div>
         </div>
