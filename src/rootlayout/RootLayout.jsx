@@ -19,8 +19,8 @@ const RootLayout = () => {
       <About />
       <Services />
       <Skills />
-      <Projects />
       <Education/>
+      <Projects />
       <Contact />
       <Footer />
     </div>
