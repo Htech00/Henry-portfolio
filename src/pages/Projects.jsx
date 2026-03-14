@@ -43,7 +43,7 @@ const projects = [
       "Ojukwu Henry’s portfolio is a polished and professional web presence that showcases his identity and expertise as a Fullstack Web Developer.",
     tool: ["React", "Tailwind Css", "HTML"],
     gitHubLink: "https://github.com/Htech00/Henry-portfolio",
-    projectLink: "https://henry-portfolio-henna.vercel.app/",
+    projectLink: "https://henryojukwu.com/",
   },
   {
     name: "Admin Dashboard – Tidoy Booking App",

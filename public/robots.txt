@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://https://henry-portfolio-henna.vercel.app/sitemap.xml
+Sitemap: https://henryojukwu.com/sitemap.xml
