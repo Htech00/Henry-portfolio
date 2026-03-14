@@ -16,16 +16,25 @@ const AboutMe = () => {
           <p className="font-semibold text-gray-500">
             I really love to create amazing products.
           </p>
-          <a href="/HENRY OJUKWU CV.pdf" className="bg-red-600 hover:bg-red-700 transition-colors py-3 px-6 w-fit text-sm text-white font-bold rounded-lg">
+          <a
+            href="/resume.pdf"
+            className="bg-red-600 hover:bg-red-700 transition-colors py-3 px-6 w-fit text-sm text-white font-bold rounded-lg"
+          >
             Download CV <i className="fa fa-download ml-2"></i>
           </a>
         </div>
 
         {/* Paragraph & Signature */}
         <div className="flex flex-col gap-6 w-full md:w-1/2 text-gray-600">
-         <p>
-         I am a seasoned Software Engineer and Web Developer with over a decade of hands-on experience in building scalable, secure, and user-focused digital solutions. My expertise spans across Java, PHP, JavaScript, React, Node.js, Laravel, and CodeIgniter. I specialize in transforming complex business requirements into efficient, high-performing applications that align technology with strategic goals across diverse industries.
-         </p>
+          <p>
+            I am a seasoned Software Engineer and Web Developer with over a
+            decade of hands-on experience in building scalable, secure, and
+            user-focused digital solutions. My expertise spans across Java, PHP,
+            JavaScript, React, Node.js, NestJS, Laravel, and CodeIgniter. I specialize
+            in transforming complex business requirements into efficient,
+            high-performing applications that align technology with strategic
+            goals across diverse industries.
+          </p>
 
           <img src={signImg} alt="signature" className="w-36 opacity-50" />
         </div>

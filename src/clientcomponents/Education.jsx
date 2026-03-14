@@ -3,6 +3,13 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const educationData = [
   {
+    title: "Diploma in Software Development",
+    institution: "JOBITECH",
+    url: "#",
+    years: "2012 – 2014",
+    description: "Diploma in Software Development, building a foundation in programming and web technologies.",
+  },
+  {
     title: "Computer Tutor",
     institution: "John Bosco Institute of Technology Onitsha",
     url: "#",
@@ -26,23 +33,34 @@ const educationData = [
     description:
       "I worked as a Software and Web Developer, where I was responsible for designing, developing, and maintaining responsive web applications and efficient backend systems. My role involved translating user requirements into functional features, optimizing application performance, and ensuring cross-browser and device compatibility.",
   },
-
-   {
+  {
     title: "Business Education",
-    institution: "Taisolarin University of Education",
+    institution: "Tai Solarin University of Education",
     url: "#",
-    years: "2018 – 2022",
-    description: "Bachelor of Science Degree in Business Education and Accounting",
+    years: "2018 – 2023",
+    description: "Bachelor of Science (B.Sc) Degree in Business Education",
   },
-
+  {
+    title: "NYSC",
+    institution: "National Youth Service Corps",
+    url: "#",
+    years: "2023 – 2024",
+    description: "Completed the mandatory National Youth Service Corps program.",
+  },
+  {
+    title: "Full-Stack Web Development Certificate",
+    institution: "Tech Studio",
+    url: "#",
+    years: "2025",
+    description: "Full-Stack Web Development certification covering modern frontend and backend technologies.",
+  },
   {
     title: "Backend Developer",
     institution: "SapphireCredit",
     url: "#",
-    years: "2025 – Present",
+    years: "Sep 2025 – Dec 2025",
     description: "I developed and maintained Laravel-based backend systems integrating Remita APIs for loan mandates and repayments, automated financial workflows to improve processing accuracy and reduce manual intervention, optimized MySQL databases for performance and reliability, managed background jobs and queues for high-volume transaction processing, and ensured secure, efficient communication between the Vue.js frontend and backend services.",
   },
-  
 ];
 
 const Education = () => {

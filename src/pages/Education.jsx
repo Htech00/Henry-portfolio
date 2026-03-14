@@ -67,12 +67,12 @@ const Education = () => {
             {"\n"}
             &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:
             <span className="text-[#ce9178]">
-              'John Bosco Institute of Technology'
+              'JOBITECH'
             </span>
             ,{"\n"}
             &nbsp;&nbsp;
             <span className="text-[#425d82]">certificate</span>:
-            <span className="text-[#ce9178]">'DIPLOMA'</span>,{"\n"}
+            <span className="text-[#ce9178]">'Diploma in Software Development'</span>,{"\n"}
             &nbsp;&nbsp;<span className="text-[#425d82]">year</span>:
             <span className="text-[#ce9178]">'2012-2014'</span>,{"\n"}
             &nbsp;&nbsp;{"}"},{"\n"}
@@ -85,10 +85,38 @@ const Education = () => {
             ,{"\n"}
             &nbsp;&nbsp;
             <span className="text-[#425d82]">certificate</span>:
-            <span className="text-[#ce9178]">'Bachelor of Science (B.Sc)'</span>
+            <span className="text-[#ce9178]">'BSc, Business Education'</span>
             ,{"\n"}
             &nbsp;&nbsp;<span className="text-[#425d82]">year</span>:
             <span className="text-[#ce9178]">'2018-2023'</span>,{"\n"}
+            &nbsp;&nbsp;{"}"},{"\n"}
+            &nbsp;&nbsp;{"{"}
+            {"\n"}
+            &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:
+            <span className="text-[#ce9178]">
+              'National Youth Service Corps'
+            </span>
+            ,{"\n"}
+            &nbsp;&nbsp;
+            <span className="text-[#425d82]">certificate</span>:
+            <span className="text-[#ce9178]">'NYSC'</span>
+            ,{"\n"}
+            &nbsp;&nbsp;<span className="text-[#425d82]">year</span>:
+            <span className="text-[#ce9178]">'2023-2024'</span>,{"\n"}
+            &nbsp;&nbsp;{"}"},{"\n"}
+            &nbsp;&nbsp;{"{"}
+            {"\n"}
+            &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:
+            <span className="text-[#ce9178]">
+              'Tech Studio'
+            </span>
+            ,{"\n"}
+            &nbsp;&nbsp;
+            <span className="text-[#425d82]">certificate</span>:
+            <span className="text-[#ce9178]">'Full-Stack Web Development Certificate'</span>
+            ,{"\n"}
+            &nbsp;&nbsp;<span className="text-[#425d82]">year</span>:
+            <span className="text-[#ce9178]">'2025'</span>,{"\n"}
             &nbsp;&nbsp;{"}"}
             {"\n"}
             &nbsp;&nbsp;]{"\n"}
@@ -120,104 +148,39 @@ const Education = () => {
             <div className="flex flex-col  border-l-1 border-[#3c3c3c] relative">
               <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
               <div className="flex justify-between px-6">
-                <h3 className="text-[#3691c5]">Tutor</h3>
+                <h3 className="text-[#3691c5]">Web Developer</h3>
                 <div className="flex items-center gap-2 text-[#6a9955]">
                   <CiCalendar className="text-[22px]" />
-                  <p>2014-2015</p>
+                  <p>2015 – 2017</p>
                 </div>
               </div>
               <h3 className="px-6 mb-3">
-                John Bosco Institute of Technology Onitsha Anambra State,
-                Nigeria
+                Ntech Information System
               </h3>
 
               <div className="px-6 mb-3">
                 <p>
-                  I previously worked as a Computer Tutor at the institution,
-                  where I was responsible for teaching fundamental and advanced
-                  computer skills to students.
+                  Developed internal business tools using CodeIgniter and PHP, improving operational efficiency. Delivered mobile-first, responsive UIs using Bootstrap across multiple client projects. Led training sessions for junior developers on CodeIgniter, JavaScript, and HTML/CSS. Reviewed and optimized peer code for scalability, performance, and best practices.
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[#425d82] px-6">Certification:</p>
-                <div className="text-[#ce9178] px-6 flex md:flex-row flex-col gap-4 text-[12px]">
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Certified Java Programmer
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">Oracle</p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Database Management
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">etc</p>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <p className="text-[#425d82] px-6">Key Courses:</p>
-                <div className="text-[#ce9178] px-6 flex md:flex-row flex-col gap-4 text-[12px]">
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Computer Architecture
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Networking Essentials
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Digital Systems
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">etc</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col border-l-1 border-[#3c3c3c] relative">
-              <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
-              <div className="flex justify-between px-6">
-                <h3 className="text-[#3691c5]">Software Developer</h3>
-                <div className="flex items-center gap-2 text-[#6a9955]">
-                  <CiCalendar className="text-[22px]" />
-                  <p>2016-2017</p>
-                </div>
-              </div>
-              <h3 className="px-6 mb-3">
-                Ntech Information System Ondo State, Nigeria
-              </h3>
-
-              <div className="px-6 mb-3">
-                <p>
-                  I worked as a Software and Web Developer, where I was
-                  responsible for designing, developing, and maintaining
-                  responsive web applications and efficient backend systems. My
-                  role involved translating user requirements into functional
-                  features, optimizing application performance, and ensuring
-                  cross-browser and device compatibility.
-                </p>
-              </div>
-              <div className="flex flex-col">
-                <p className="text-[#425d82] px-6">Certification:</p>
+                <p className="text-[#425d82] px-6">Tech Stack:</p>
                 <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Certified PHP Developer
+                    PHP
                   </p>
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    CodeIgnita & Laravel Developer
+                    CodeIgniter
                   </p>
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Database Management
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">etc</p>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <p className="text-[#425d82] px-6">Key Courses::</p>
-                <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Data Structures & APIs
+                    JavaScript
                   </p>
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    CodeIgnita
+                    Bootstrap
                   </p>
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Responsive Web Design
+                    HTML/CSS
                   </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">Laravel</p>
                 </div>
               </div>
             </div>
@@ -227,7 +190,7 @@ const Education = () => {
                 <h3 className="text-[#3691c5]">Backend Developer</h3>
                 <div className="flex items-center gap-2 text-[#6a9955]">
                   <CiCalendar className="text-[22px]" />
-                  <p>2025-Present</p>
+                  <p>Sep 2025 – Dec 2025</p>
                 </div>
               </div>
               <h3 className="px-6 mb-3">
@@ -236,11 +199,68 @@ const Education = () => {
 
               <div className="px-6 mb-3">
                 <p>
-                  I developed and maintained Laravel-based backend systems integrating Remita APIs for loan mandates and repayments, automated financial workflows to improve processing accuracy and reduce manual intervention, optimized MySQL databases for performance and reliability, managed background jobs and queues for high-volume transaction processing, and ensured secure, efficient communication between the Vue.js frontend and backend services.
+                  Developed and maintained Laravel-based backend systems integrating Remita APIs for digital loan mandates and automated repayment cycles. Automated financial workflows, reducing manual intervention and improving processing accuracy. Optimized MySQL database performance and reliability for high-volume transaction processing. Managed background jobs and queues for large-scale financial operations. Ensured secure, efficient communication between Vue.js frontend and backend services.
                 </p>
               </div>
-              
-              
+              <div className="flex flex-col">
+                <p className="text-[#425d82] px-6">Tech Stack:</p>
+                <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Laravel
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    PHP
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    MySQL
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Remita API
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Vue.js
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col border-l-1 border-[#3c3c3c] relative">
+              <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
+              <div className="flex justify-between px-6">
+                <h3 className="text-[#3691c5]">Backend Developer</h3>
+                <div className="flex items-center gap-2 text-[#6a9955]">
+                  <CiCalendar className="text-[22px]" />
+                  <p>Dec 2025 – Feb 2026</p>
+                </div>
+              </div>
+              <h3 className="px-6 mb-3">
+                Gloubal Inc.
+              </h3>
+
+              <div className="px-6 mb-3">
+                <p>
+                  Designed and maintained secure REST APIs handling payments, transfers, withdrawals, and account management with robust authentication and authorization controls. Implemented business and financial logic covering transactions, fees, VAT, balance validation, and spending limits. Protected sensitive financial data through encryption, access controls, and secure storage. Integrated third-party financial services including payment gateways, banking APIs, KYC/AML services, and notification systems with proper failure handling and webhook security.
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <p className="text-[#425d82] px-6">Tech Stack:</p>
+                <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Node.js
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Express.js
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    PostgreSQL
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    REST APIs
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    KYC/AML
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         )}

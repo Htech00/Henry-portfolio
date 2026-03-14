@@ -78,7 +78,7 @@ const Home = () => {
 
         <meta name="description" content="Fullstack developer skilled in building responsive, scalable web applications. Passionate about clean code, intuitive UI/UX, and solving real-world problems using modern JavaScript, React, Node.js, and databases." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://henry-portfolio-henna.vercel.app/" />
+        <link rel="canonical" href="https://henryojukwu.com" />
       </Helmet>
       <section
         className="w-full bg-[linear-gradient(to_right,rgba(255,0,0,0.07),rgba(255,255,255,0.2))] py-16 px-4 scroll-mt-[80px] sm:scroll-mt-[100px]"
