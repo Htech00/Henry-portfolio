@@ -3,7 +3,7 @@ import worldApp from "../assets/worldapp.jpg";
 import spaceship from "../assets/spaceship.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import portfolioImage from "../assets/henryportfolio.jpg";
+import portfolioImage from "../assets/henryportfolio.png";
 import goalWebImage from "../assets/goalweb.jpg";
 import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
 import ams from "../assets/amsImage.jpg";
@@ -122,7 +122,7 @@ const Projects = () => {
           >
             <img
               src={project.image}
-              className="w-full h-[190px] object-cover rounded-t-md"
+              className="w-full h-[190px] object-cover rounded-t-md border-b border-[#3c3c3c]/60"
               alt={project.name}
             />
             <div className="p-4  space-y-3">

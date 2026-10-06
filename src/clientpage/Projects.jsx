@@ -1,7 +1,7 @@
 import React from "react";
 import worldApp from "../assets/worldapp.jpg";
 import spaceship from "../assets/spaceship.jpg";
-import portfolioImage from "../assets/henryportfolio.jpg";
+import portfolioImage from "../assets/henryportfolio.png";
 import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
@@ -126,7 +126,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-44 object-cover"
+                className="w-full h-44 object-cover border-b border-gray-900/10"
               />
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-lg sm:text-xl font-semibold text-[#425d82] mb-3">
