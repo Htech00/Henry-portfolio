@@ -7,6 +7,7 @@ import portfolioImage from "../assets/henryportfolio.jpg";
 import goalWebImage from "../assets/goalweb.jpg";
 import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
 import ams from "../assets/amsImage.jpg";
+import tmkImage from "../assets/tmkresidence.png";
 
 const projects = [
   {
@@ -73,6 +74,28 @@ const projects = [
     gitHubLink: "https://github.com/Htech00/account-management-ondo-diocese",
     projectLink: "#",
   },
+
+  {
+    name: "TMK Residence – Shortlet Booking Platform",
+    image: tmkImage,
+    description:
+      "I built a full-stack booking platform for TMK Residence, a luxury shortlet apartment business in Abuja. Guests can browse listings, check availability and book through a multi-step flow with ID verification and Paystack payment. Staff use an admin dashboard to manage listings, bookings, occupancy calendars, guests, inquiries and revenue.",
+    tool: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind Css",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "BullMQ",
+      "Paystack",
+    ],
+    gitHubLink: "https://github.com/Htech00/shortlet-booking-frontend",
+    projectLink: "https://tmkresidence.com",
+  },
+
 ];
 
 const Projects = () => {
