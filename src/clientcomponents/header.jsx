@@ -1,135 +1,98 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
-import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+const navLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#skills", label: "Skills" },
+  { href: "#education", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
+
+const ViewSwitch = () => (
+  <div className="flex rounded-full border border-gray-200 bg-gray-100 p-1 text-sm font-medium">
+    <span className="rounded-full bg-[#425d82] px-3 py-1 text-white shadow-sm">
+      Client
+    </span>
+    <a
+      href="/developer"
+      className="rounded-full px-3 py-1 text-gray-600 transition-colors hover:text-[#425d82]"
+    >
+      Developer
+    </a>
+  </div>
+);
 
 const Header = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="bg-black/70 shadow-md fixed w-full z-20">
-      <div className="flex justify-between items-center px-6 py-4 md:py-6">
+    <header className="bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm fixed w-full z-20">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 md:py-4">
         {/* Logo */}
-        <div className="flex items-center gap-4">
+        <a href="#home" className="flex items-center gap-3">
           <img
             src={logo}
-            alt="Avatar"
-            className="w-10 h-10 rounded-full cursor-pointer"
+            alt="Henry Ojukwu logo"
+            className="w-10 h-10 rounded-full"
           />
-          <span className="text-xl font-semibold bg-gradient-to-r from-[#ff0000] to-[#ffffff] bg-clip-text text-transparent hidden md:inline">
-            Henry.Ojukwu Portfolio
+          <span className="text-lg font-bold text-[#425d82]">
+            Henry Ojukwu
           </span>
-        </div>
+        </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-white font-medium">
-          <a href="#home" className="hover:text-red-600">
-            Home
-          </a>
-          <a href="#about" className="hover:text-red-600">
-            About
-          </a>
-          <a href="#services" className="hover:text-red-600">
-            Services
-          </a>
-          <a href="#skills" className="hover:text-red-600">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-red-600">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-red-600">
-            Contact
-          </a>
+        <nav className="hidden lg:flex gap-7 text-gray-700 font-medium text-[15px]">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hover:text-[#425d82] transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
+        {/* View Switch */}
+        <div className="hidden lg:block">
+          <ViewSwitch />
+        </div>
+
         {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={toggleMobileMenu}
-            className="text-white text-2xl focus:outline-none"
-          >
-            {mobileMenuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
-
-        {/* Client View Dropdown */}
-        <div className="relative hidden md:block">
-          <button
-            onClick={toggleDropdown}
-            className="bg-gradient-to-r from-[#ff0000] to-[#b30000] text-white font-semibold px-4 py-2 rounded-md flex items-center gap-1 cursor-pointer"
-          >
-            Client View <FaChevronDown className="text-xs mt-1" />
-          </button>
-
-          {dropdownOpen && (
-            <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md overflow-hidden z-10 cursor-pointer">
-              <a
-                href="/developer"
-                className="block px-4 py-2 text-sm hover:bg-blue-100 text-gray-700"
-              >
-                Developer View
-              </a>
-              <a
-                href="/client"
-                className="block px-4 py-2 text-sm hover:bg-blue-100 text-gray-700"
-              >
-                Client View
-              </a>
-            </div>
-          )}
-        </div>
+        <button
+          onClick={toggleMobileMenu}
+          className="lg:hidden text-[#425d82] text-2xl p-1 focus:outline-none"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
+        >
+          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-black/80 px-6 py-4 space-y-3 text-white font-medium">
-          <a href="#home" className="block hover:text-red-600">
-            Home
-          </a>
-          <a href="#about" className="block hover:text-red-600">
-            About
-          </a>
-          <a href="#services" className="block hover:text-red-600">
-            Services
-          </a>
-          <a href="#skills" className="block hover:text-red-600">
-            Skills
-          </a>
-          <a href="#projects" className="block hover:text-red-600">
-            Projects
-          </a>
-          <a href="#contact" className="block hover:text-red-600">
-            Contact
-          </a>
-          <div className="mt-4">
-            <button
-              onClick={toggleDropdown}
-              className="w-full bg-gradient-to-r from-[#ff0000] to-[#b30000] text-white font-semibold px-4 py-2 rounded-md flex items-center justify-between cursor-pointer"
+        <nav className="lg:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-1 text-gray-700 font-medium">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={closeMobileMenu}
+              className="block rounded-md px-2 py-2 hover:bg-[#425d82]/10 hover:text-[#425d82]"
             >
-              Client View <FaChevronDown className="text-xs" />
-            </button>
-            {dropdownOpen && (
-              <div className="mt-2 bg-white rounded-md overflow-hidden text-gray-700">
-                <a
-                  href="/developer"
-                  className="block px-4 py-2 text-sm hover:bg-blue-100"
-                >
-                  Developer View
-                </a>
-                <a
-                  href="/client"
-                  className="block px-4 py-2 text-sm hover:bg-blue-100"
-                >
-                  Client View
-                </a>
-              </div>
-            )}
+              {link.label}
+            </a>
+          ))}
+          <div className="pt-3">
+            <ViewSwitch />
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );
