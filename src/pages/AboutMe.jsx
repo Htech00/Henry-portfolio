@@ -1,5 +1,5 @@
 import React from "react";
-import henryimg from "../assets/henry.png";
+import henryimg from "../assets/henry.webp";
 import { skillGroups } from "../data/skills";
 
 const interests = [
@@ -41,7 +41,7 @@ const AboutMe = () => {
                 {"\n    "}<S>'Backend Developer @ AnyWorky (2026 – present)'</S>,
                 {"\n    "}<S>'Backend Developer @ Gloubal Inc. (2025 – 2026)'</S>,
                 {"\n    "}<S>'Backend Developer @ SapphireCredit (2025)'</S>,
-                {"\n    "}<S>'Software Developer @ Ntech Information System (2016 – 2017)'</S>,
+                {"\n    "}<S>'Software Developer @ Ntech Information System (2015 – 2017)'</S>,
                 {"\n  "}],
                 {"\n  "}<K>education</K>: [
                 {"\n    "}<S>'B.Sc, Tai Solarin University of Education'</S>,
@@ -56,7 +56,7 @@ const AboutMe = () => {
           <div className="md:mt-30">
             <img
               src={henryimg}
-              className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] relative"
+              className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] object-cover object-top relative"
               alt="Henry Ojukwu, Backend & Full-Stack Developer"
             />
           </div>

@@ -88,7 +88,7 @@ const Education = () => {
             <span className="text-[#ce9178]">'BSc, Business Education'</span>
             ,{"\n"}
             &nbsp;&nbsp;<span className="text-[#425d82]">year</span>:
-            <span className="text-[#ce9178]">'2018-2023'</span>,{"\n"}
+            <span className="text-[#ce9178]">'2018-2022'</span>,{"\n"}
             &nbsp;&nbsp;{"}"},{"\n"}
             &nbsp;&nbsp;{"{"}
             {"\n"}
@@ -284,16 +284,16 @@ const Education = () => {
                 <p className="text-[#425d82] px-6">Tech Stack:</p>
                 <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Node.js
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    NestJS
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    PostgreSQL
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
                     REST APIs
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Authentication
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Real-time Matching
-                  </p>
-                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
-                    Data Modeling
                   </p>
                 </div>
               </div>

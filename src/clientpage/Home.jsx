@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import henryImg from "../assets/henry.png";
+import henryImg from "../assets/henry.webp";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { FiArrowRight } from "react-icons/fi";

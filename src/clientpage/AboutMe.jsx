@@ -28,7 +28,7 @@ const AboutMe = () => {
             that scales with them.
           </p>
           <a
-            href="/resume.pdf"
+            href="/resume.pdf" download="Henry-Ojukwu-Resume.pdf"
             className="flex items-center gap-2 bg-[#425d82] hover:bg-[#344a68] transition-colors py-3 px-6 w-fit text-sm text-white font-semibold rounded-full shadow-md"
           >
             <FiDownload className="text-[18px]" />

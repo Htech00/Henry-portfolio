@@ -3,7 +3,6 @@ import Navbar from "../clientcomponents/header"
 import Footer from "../clientcomponents/footer"
 import Home from "../clientpage/Home"
 import About from "../clientpage/AboutMe"
-import Experience from "../clientpage/Experience"
 import Services from "../clientpage/Services"
 import Skills from '../clientpage/Skills'
 import Projects from '../clientpage/Projects'

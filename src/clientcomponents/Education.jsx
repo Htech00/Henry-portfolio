@@ -29,7 +29,7 @@ const educationData = [
     title: "Software Developer",
     institution: "Ntech System",
     url: "#",
-    years: "2016 – 2017",
+    years: "2015 – 2017",
     description:
       "I worked as a Software and Web Developer, where I was responsible for designing, developing, and maintaining responsive web applications and efficient backend systems. My role involved translating user requirements into functional features, optimizing application performance, and ensuring cross-browser and device compatibility.",
   },
@@ -37,7 +37,7 @@ const educationData = [
     title: "Business Education",
     institution: "Tai Solarin University of Education",
     url: "#",
-    years: "2018 – 2023",
+    years: "2018 – 2022",
     description: "Bachelor of Science (B.Sc) Degree in Business Education",
   },
   {

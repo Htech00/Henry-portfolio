@@ -3,11 +3,11 @@ import worldApp from "../assets/worldapp.jpg";
 import spaceship from "../assets/spaceship.jpg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import portfolioImage from "../assets/henryportfolio.png";
+import portfolioImage from "../assets/henryportfolio.webp";
 import goalWebImage from "../assets/goalweb.jpg";
-import tidoyImage from "../assets/adminbackendfortidoybooking.jpg";
-import ams from "../assets/amsImage.jpg";
-import tmkImage from "../assets/tmkresidence.png";
+import tidoyImage from "../assets/adminbackendfortidoybooking.webp";
+import ams from "../assets/amsImage.webp";
+import tmkImage from "../assets/tmkresidence.webp";
 
 const projects = [
   {

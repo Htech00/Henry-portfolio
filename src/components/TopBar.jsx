@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
 
 const TopBar = () => {
   const [lightMode, setLightMode] = useState(() => {
@@ -22,9 +21,6 @@ const TopBar = () => {
   ) : (
     <IoSunnyOutline className="w-3 sm:w-4" />
   );
-
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <div className="flex items-center w-full justify-between bg-[#333333] px-4 py-2 text-white text-sm">
@@ -54,31 +50,17 @@ const TopBar = () => {
           </p>
         </div>
 
-        {/* View Switch Dropdown */}
-        <div className="flex relative">
-          <button
-            onClick={toggleDropdown}
-            className="bg-black/40 text-white/70 font-semibold px-4 py-2 rounded-md flex items-center gap-1 cursor-pointer"
+        {/* View Switch */}
+        <div className="flex rounded-full border border-white/10 bg-black/40 p-1 text-xs sm:text-sm font-medium">
+          <a
+            href="/client"
+            className="rounded-full px-3 py-1 text-gray-300 transition-colors hover:text-white"
           >
-            Dev View <FaChevronDown className="text-xs mt-1" />
-          </button>
-
-          {dropdownOpen && (
-            <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md overflow-hidden top-8 z-10 cursor-pointer">
-              <a
-                href="/developer"
-                className="block px-4 py-2 text-sm hover:bg-blue-100 text-gray-700"
-              >
-                Developer View
-              </a>
-              <a
-                href="/client"
-                className="block px-4 py-2 text-sm hover:bg-blue-100 text-gray-700"
-              >
-                Client view
-              </a>
-            </div>
-          )}
+            Client
+          </a>
+          <span className="rounded-full bg-[#3691c5] px-3 py-1 text-white shadow-sm">
+            Developer
+          </span>
         </div>
       </div>
     </div>

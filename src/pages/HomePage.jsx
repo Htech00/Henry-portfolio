@@ -1,6 +1,6 @@
 import React from "react";
 import { CgSoftwareDownload } from "react-icons/cg";
-import henryimg from "../assets/henry.png";
+import henryimg from "../assets/henry.webp";
 import { HiOutlineClock } from "react-icons/hi2";
 import { FiCheckCircle, FiShield } from "react-icons/fi";
 
@@ -59,7 +59,7 @@ const HomePage = () => {
                 <span className="">{"};"}</span>
               </code>
             </pre>
-            <a href="/resume.pdf" className="flex items-center  gap-2 mx-auto  px-4 py-2 md:w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold w-[200px] justify-center ">
+            <a href="/resume.pdf" download="Henry-Ojukwu-Resume.pdf" className="flex items-center  gap-2 mx-auto  px-4 py-2 md:w-[166.8px] bg-[#3691c5] rounded-md text-white font-bold w-[200px] justify-center ">
               <div className="flex items-center gap-2">
                 <p>Download CV</p>
                 <CgSoftwareDownload className="text-[30px]" />
@@ -72,7 +72,7 @@ const HomePage = () => {
         <div className="md:mt-20 md:mb-0 mb-20">
           <img
             src={henryimg}
-            className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] relative"
+            className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] object-cover object-top relative"
             alt="Henry Ojukwu, Backend & Full-Stack Developer"
           />
         </div>
