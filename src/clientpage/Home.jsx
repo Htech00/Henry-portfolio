@@ -74,7 +74,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-3 w-full items-center md:items-start">
               <a
                 className="flex items-center justify-center gap-2 bg-[#425d82] text-white font-semibold rounded-full shadow-md hover:bg-[#344a68] transition-colors px-7 py-3 w-full sm:w-auto"
-                href="mailto:htechsolutionz@gmail.com"
+                href="mailto:henryojukwu1996@gmail.com"
               >
                 <IoMailOutline className="text-[20px]" />
                 Hire Me

@@ -138,13 +138,13 @@ const ContactMe = () => {
         <div className="grid md:grid-cols-3 grid-cols-1 sm:text-[16px] text-[12px]">
           <div className="flex gap-2 items-center ">
             <a
-              href="mailto:htechsolutionz@gmail.com"
+              href="mailto:henryojukwu1996@gmail.com"
               className="hover:text-[#3691c5]"
               target="_blank"
             >
               <div className="flex gap-2 items-center">
                 <MdOutlineMail className="text-[22px]" />
-                <p>Htechsolutionz@gmail.com</p>
+                <p>henryojukwu1996@gmail.com</p>
               </div>
             </a>
           </div>

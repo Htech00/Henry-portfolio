@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="#terms" className="hover:text-red-500 transition duration-300">
             Terms of Use
           </a>
-          <a href="mailto:htechsolutionz@gmail.com" className="hover:text-red-500 transition duration-300 hidden sm:inline">
+          <a href="mailto:henryojukwu1996@gmail.com" className="hover:text-red-500 transition duration-300 hidden sm:inline">
             Contact Support
           </a>
         </div>

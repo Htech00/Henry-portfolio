@@ -52,7 +52,7 @@ const Contact = () => {
             <ul className="space-y-4 text-sm text-gray-700">
               <li className="flex items-center gap-3">
                 <FiMail className="text-[#425d82]" />
-                htechsolutionz@gmail.com
+                henryojukwu1996@gmail.com
               </li>
               <li className="flex items-center gap-3">
                 <FiPhone className="text-[#425d82]" />

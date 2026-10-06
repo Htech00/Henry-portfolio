@@ -111,7 +111,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
 
                   <p>Twitter</p>
                 </div>
-                <a href="mailto:htechsolutionz@gmail.com" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
+                <a href="mailto:henryojukwu1996@gmail.com" className="flex gap-1 hover:bg-[#2e2e2e]  items-center px-2 py-1 rounded cursor-pointer">
                   <MdOutlineEmail />
                   <p>Email</p>
                 </a>
