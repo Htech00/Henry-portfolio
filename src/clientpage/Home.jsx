@@ -1,154 +1,116 @@
 import React, { useEffect } from "react";
 import henryImg from "../assets/henry.png";
-import { FaRegEye } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
+import { FiArrowRight } from "react-icons/fi";
 import ScrollReveal from "scrollreveal";
 import { Helmet } from "react-helmet-async";
 
+const stack = ["Node.js", "Express", "Laravel", "PostgreSQL", "MySQL", "React"];
+
 const Home = () => {
   useEffect(() => {
-    ScrollReveal().reveal(".partners", {
-      duration: 1500,
-      origin: "left",
-      distance: "800px",
-      delay: 500,
-      easing: "ease-in-out",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".elipse", {
-      duration: 200,
-      origin: "left",
-      distance: "800px",
-      delay: 500,
-      easing: "ease-in-out",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".card", {
-      duration: 500,
-      origin: "right",
-      distance: "200px",
-      delay: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".laptop", {
-      duration: 800,
-      origin: "top",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".hotspot", {
-      duration: 800,
-      origin: "right",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".watch", {
-      duration: 800,
-      origin: "right",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".diamond", {
-      duration: 100,
+    const fadeUp = {
+      duration: 700,
       origin: "bottom",
-      distance: "100px",
-      delay: 100,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      distance: "20px",
+      easing: "ease-out",
       opacity: 0,
-    });
+    };
+
+    ScrollReveal().reveal(".hero-text", { ...fadeUp, delay: 100 });
+    ScrollReveal().reveal(".hero-photo", { ...fadeUp, delay: 250 });
+    ScrollReveal().reveal(".hero-stats", { ...fadeUp, delay: 400 });
   }, []);
 
   return (
     <>
-     <Helmet>
-        <title>Henry Ojukwu | FullStack Developer</title>
+      <Helmet>
+        <title>Henry Ojukwu | Backend & Full-Stack Developer (Fintech)</title>
 
-        <meta name="description" content="Fullstack developer skilled in building responsive, scalable web applications. Passionate about clean code, intuitive UI/UX, and solving real-world problems using modern JavaScript, React, Node.js, and databases." />
+        <meta
+          name="description"
+          content="Backend and full-stack developer building secure, scalable systems for fintech and marketplace platforms: REST APIs, payments, KYC/AML integrations, and real-time matching with Node.js, Laravel, PostgreSQL, and React."
+        />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://henryojukwu.com" />
       </Helmet>
       <section
-        className="w-full bg-[linear-gradient(to_right,rgba(255,0,0,0.07),rgba(255,255,255,0.2))] py-16 px-4 scroll-mt-[80px] sm:scroll-mt-[100px]"
+        className="w-full bg-gradient-to-br from-[#425d82]/10 via-white to-white py-16 px-4 scroll-mt-[80px] sm:scroll-mt-[100px]"
         id="home"
       >
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Text Content */}
-          <div className="flex flex-col gap-5 text-center md:text-left w-full md:w-1/2 order-1 mt-10">
-            <p className="text-sm sm:text-base font-normal sm:font-semibold">
-              Hi I'm, ____________
-            </p>
-            <h1 className="text-[#425d82] text-2xl sm:text-[70px] font-semibold">
-               Henry Ojukwu
-            </h1>
+          <div className="hero-text flex flex-col gap-6 text-center md:text-left w-full md:w-1/2 mt-10">
+            <div className="flex flex-col gap-2">
+              <p className="text-base font-medium text-gray-600">Hi, I'm</p>
+              <h1 className="text-[#425d82] text-4xl sm:text-5xl lg:text-[64px] font-bold leading-tight">
+                Henry Ojukwu
+              </h1>
+              <p className="text-lg sm:text-xl font-semibold text-gray-800">
+                Backend & Full-Stack Developer · Fintech
+              </p>
+            </div>
 
-            <p className="text-sm font-normal text-gray-700">
-              I am a skilled Full-Stack Web Developer specializing in building
-              responsive, scalable, and efficient web applications using modern
-              technologies.
+            <p className="text-base text-gray-600 leading-relaxed">
+              I build secure, scalable backends for payment, fintech, and
+              marketplace platforms, from REST APIs and financial logic to
+              third-party integrations, and ship the full-stack features that
+              run on top of them.
             </p>
+
+            <ul className="flex flex-wrap gap-2 justify-center md:justify-start">
+              {stack.map((tech) => (
+                <li
+                  key={tech}
+                  className="text-sm text-[#425d82] bg-[#425d82]/10 px-3 py-1 rounded-full"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 w-full">
+            <div className="flex flex-col sm:flex-row gap-3 w-full items-center md:items-start">
               <a
-                className="bg-[#425d82] text-white font-medium rounded-full shadow-lg hover:bg-[#425d82]/80 p-4 md:w-[200px] w-full "
-                href="https://www.linkedin.com/in/henry-ojukwu-2296a0297?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiFqwaA6OTGuKLs87faTmrA%3D%3D"
+                className="flex items-center justify-center gap-2 bg-[#425d82] text-white font-semibold rounded-full shadow-md hover:bg-[#344a68] transition-colors px-7 py-3 w-full sm:w-auto"
+                href="mailto:htechsolutionz@gmail.com"
               >
-                <div className="font-bold flex items-center gap-2 justify-center">
-                  <p>in</p>
-                  <p>LinkedIn</p>
-                </div>
+                <IoMailOutline className="text-[20px]" />
+                Hire Me
               </a>
               <a
-                className="bg-[#c7a108] text-white font-medium rounded-full shadow-lg hover:bg-[#856e08] p-4 w-full md:w-[200px]"
-                href="https://vercel.com/htechs-projects"
+                className="flex items-center justify-center gap-2 border-2 border-[#425d82] text-[#425d82] font-semibold rounded-full hover:bg-[#425d82]/10 transition-colors px-7 py-[10px] w-full sm:w-auto"
+                href="#projects"
               >
-                <div className="flex items-center gap-2 justify-center">
-                  <p className="font-semibold ">View My Work</p>
-                  <FaRegEye className="text-[30px]" />
-                </div>
+                View Projects
+                <FiArrowRight className="text-[18px]" />
+              </a>
+              <a
+                className="flex items-center justify-center text-[#425d82] hover:text-[#344a68] transition-colors p-2"
+                href="https://www.linkedin.com/in/henry-ojukwu-2296a0297"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Henry Ojukwu on LinkedIn"
+              >
+                <FaLinkedin className="text-[36px]" />
               </a>
             </div>
           </div>
 
           {/* Image & Info */}
-          <div className="flex flex-col items-center w-full md:w-1/2 order-2 sm:order-none">
-            <div
-              className="bg-cover bg-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] rounded-md shadow-xl diamond mt-10"
-              style={{ backgroundImage: `url(${henryImg})` }}
-            ></div>
+          <div className="flex flex-col items-center w-full md:w-1/2">
+            <img
+              src={henryImg}
+              alt="Henry Ojukwu, Backend & Full-Stack Developer"
+              className="hero-photo object-cover w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] rounded-2xl shadow-xl mt-10"
+            />
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-6 laptop items-center">
-              <InfoCard label="Born in" value="Nigeria" color="red" />
-              <InfoCard label="Experience" value="11+ Years" color="#70a5fa" />
-              <InfoCard
-                label="Date Of Birth"
-                value="12 Jul 1995"
-                color="purple"
-              />
+            <div className="hero-stats grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 w-full max-w-[420px]">
+              <InfoCard label="Experience" value="5+ Years" />
+              <InfoCard label="Focus" value="Backend & Fintech" />
+              <InfoCard label="Currently" value="AnyWorky" />
             </div>
-
-            <a
-              className="bg-[#4fbd65] mt-6 py-3 px-8 text-white rounded-3xl shadow-lg md:w-[200px] w-full hover:bg-[#4fbd65]/80"
-              href="mailto:htechsolutionz@gmail.com"
-            >
-              <div className="flex gap-2 justify-center items-center ">
-                <IoMailOutline className="text-[22px]" />
-                <p className="text-[18px]">Hire Me</p>
-              </div>
-            </a>
           </div>
         </div>
       </section>
@@ -156,13 +118,12 @@ const Home = () => {
   );
 };
 
-const InfoCard = ({ label, value, color }) => (
-  <div
-    className={`flex flex-col p-4 border-2 border-l-4 rounded-md shadow-md bg-white`}
-    style={{ borderLeftColor: color }}
-  >
-    <p className="text-sm text-gray-500 font-medium">{label}</p>
-    <p className="font-semibold text-black">{value}</p>
+const InfoCard = ({ label, value }) => (
+  <div className="flex flex-col p-3 rounded-lg border border-gray-200 border-l-4 border-l-[#425d82] bg-white shadow-sm text-center sm:text-left">
+    <p className="text-xs uppercase tracking-wide text-gray-500 font-medium">
+      {label}
+    </p>
+    <p className="font-semibold text-gray-900">{value}</p>
   </div>
 );
 

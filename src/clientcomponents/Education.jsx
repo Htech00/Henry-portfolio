@@ -61,6 +61,20 @@ const educationData = [
     years: "Sep 2025 – Dec 2025",
     description: "I developed and maintained Laravel-based backend systems integrating Remita APIs for loan mandates and repayments, automated financial workflows to improve processing accuracy and reduce manual intervention, optimized MySQL databases for performance and reliability, managed background jobs and queues for high-volume transaction processing, and ensured secure, efficient communication between the Vue.js frontend and backend services.",
   },
+  {
+    title: "Backend Developer",
+    institution: "Gloubal Inc.",
+    url: "#",
+    years: "Dec 2025 – Feb 2026",
+    description: "I designed and maintained secure REST APIs handling payments, transfers, withdrawals, and account management with robust authentication and authorization controls, implemented financial logic covering transactions, fees, VAT, balance validation, and spending limits, protected sensitive financial data through encryption, access controls, and secure storage in compliance with regulatory standards, designed efficient database schemas with safeguards against double-spending, and integrated third-party services including payment gateways, banking APIs, KYC/AML services, and notification systems with proper failure handling and webhook security.",
+  },
+  {
+    title: "Backend Developer",
+    institution: "AnyWorky",
+    url: "#",
+    years: "Apr 2026 – Present",
+    description: "I am building the backend infrastructure for an on-demand local services marketplace that connects customers with verified service providers through real-time availability, matching, and request management. I designed and built REST APIs for customer, provider, and service workflows, developed logic for real-time provider availability and job matching, implemented authentication, authorization, and secure account management, and modeled marketplace data for users, providers, categories, requests, and bookings, with a strong focus on reliability, scalability, and maintainability.",
+  },
 ];
 
 const Education = () => {

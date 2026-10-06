@@ -238,7 +238,7 @@ const Education = () => {
 
               <div className="px-6 mb-3">
                 <p>
-                  Designed and maintained secure REST APIs handling payments, transfers, withdrawals, and account management with robust authentication and authorization controls. Implemented business and financial logic covering transactions, fees, VAT, balance validation, and spending limits. Protected sensitive financial data through encryption, access controls, and secure storage. Integrated third-party financial services including payment gateways, banking APIs, KYC/AML services, and notification systems with proper failure handling and webhook security.
+                  Designed and maintained secure REST APIs handling payments, transfers, withdrawals, and account management with robust authentication and authorization controls. Implemented business and financial logic covering transactions, fees, VAT, balance validation, and spending limits. Protected sensitive financial data through encryption, access controls, and secure storage. Designed efficient database schemas, managed transactions, and implemented safeguards against double-spending. Integrated third-party financial services including payment gateways, banking APIs, KYC/AML services, and notification systems with proper failure handling and webhook security.
                 </p>
               </div>
               <div className="flex flex-col">
@@ -258,6 +258,42 @@ const Education = () => {
                   </p>
                   <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
                     KYC/AML
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col border-l-1 border-[#3c3c3c] relative">
+              <div className="rounded-full h-3 w-3 bg-[#3691c5] absolute top-[8px]"></div>
+              <div className="flex justify-between px-6">
+                <h3 className="text-[#3691c5]">Backend Developer</h3>
+                <div className="flex items-center gap-2 text-[#6a9955]">
+                  <CiCalendar className="text-[22px]" />
+                  <p>Apr 2026 – Present</p>
+                </div>
+              </div>
+              <h3 className="px-6 mb-3">
+                AnyWorky
+              </h3>
+
+              <div className="px-6 mb-3">
+                <p>
+                  Building backend infrastructure for an on-demand local services marketplace connecting customers with verified service providers through real-time availability, matching, and request management. Designed and built REST APIs for customer, provider, and service workflows. Developed backend logic for real-time provider availability and job matching. Implemented authentication, authorization, and secure user account management. Modeled and managed marketplace data for users, providers, categories, requests, and bookings, with a strong focus on reliability, scalability, and maintainability.
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <p className="text-[#425d82] px-6">Tech Stack:</p>
+                <div className="text-[#ce9178] px-6 flex gap-4 text-[12px] md:flex-row flex-col">
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    REST APIs
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Authentication
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Real-time Matching
+                  </p>
+                  <p className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                    Data Modeling
                   </p>
                 </div>
               </div>

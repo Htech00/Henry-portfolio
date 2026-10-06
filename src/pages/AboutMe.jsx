@@ -112,7 +112,7 @@ const AboutMe = () => {
                 &nbsp;&nbsp;<span className="text-[#425d82]">bio</span>:{" "}
                 <span className="text-[#ce9178]">
                   'I’m a curious and passionate web &nbsp;&nbsp;developer with
-                  over seven years of &nbsp;&nbsp;experience. I love
+                  over five years of &nbsp;&nbsp;experience. I love
                   transforming complex &nbsp;&nbsp;ideas into simple, elegant
                   web experiences &nbsp;&nbsp;and I'm always exploring new tools
                   and &nbsp;&nbsp;technologies.'
@@ -128,7 +128,7 @@ const AboutMe = () => {
             <img
               src={henryimg}
               className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] relative"
-              alt=""
+              alt="Henry Ojukwu, Backend & Full-Stack Developer"
             />
           </div>
           <div className="bg-[#3f3c3c3f] p-4 rounded-md border-1 border-[#3c3c3c]  w-full max-w-md font-mono shadow-md ">
@@ -137,7 +137,7 @@ const AboutMe = () => {
             </p>
             <p className="">
               I'm a passionate Full Stack Developer with expertise in building
-              modern web applications. With over 1 years of experience, I
+              modern web applications. With over 5 years of experience, I
               specialize in creating responsive, user-friendly interfaces and
               robust backend systems. My goal is to deliver high-quality
               solutions that solve real-world problems and provide exceptional

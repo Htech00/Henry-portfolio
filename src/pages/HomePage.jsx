@@ -2,31 +2,24 @@ import React from "react";
 import { CgSoftwareDownload } from "react-icons/cg";
 import henryimg from "../assets/henry.png";
 import { HiOutlineClock } from "react-icons/hi2";
-import { FiCheckCircle } from "react-icons/fi";
-import { CiMedal } from "react-icons/ci";
-
-const codeString = `
-const developer = {
-  name: 'Henry Ojukwu',
-  title: 'Full Stack Developer',
-  skills: ['React', 'Next.js', 'TypeScript', 'Node.js, javascript', 'HTML', 'CSS'],
-  passion: 'Building beautiful web experiences'
-};`;
+import { FiCheckCircle, FiShield } from "react-icons/fi";
 
 const HomePage = () => {
   return (
     <div className=" max-w-4xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
         <div className="space-y-8 mb-8 items-center">
-          <div className="space-y-4">
-            <p className="text-[#6a9955] text-2xl">// Hi I'm a Developer</p>
-            <p className="text-[#425d82] text-4xl font-semibold w-[250px]">
-              Welcome to my portfolio
+          <div className="space-y-3">
+            <p className="text-[#6a9955] text-2xl">// Hello, world. I'm</p>
+            <h1 className="text-[#425d82] text-4xl md:text-5xl font-semibold">
+              Henry Ojukwu
+            </h1>
+            <p className="text-xl text-[#23eeb1] font-mono">
+              Backend & Full-Stack Developer · Fintech
             </p>
-            <p className="text-2xl text-[#23eeb1]">{"<Portfolio />"}</p>
           </div>
           <div className="md:w-[432px]  rounded-md p-4 md:mb-6 border border-[#3c3c3c] font-mono">
-            <pre className="whitespace-pre-wrap break-words text-xl ">
+            <pre className="whitespace-pre-wrap break-words text-lg ">
               <code>
                 <span className="text-[#425d82]">const</span>{" "}
                 <span className="text-[#3691c5]">developer</span>{" "}
@@ -35,24 +28,32 @@ const HomePage = () => {
                 &nbsp;&nbsp;<span className="text-[#425d82]">name</span>:{" "}
                 <span className="text-[#ce9178]">'Henry Ojukwu'</span>,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">title</span>:{" "}
-                <span className="text-[#ce9178]">'Full Stack Developer'</span>,
-                {"\n"}
+                <span className="text-[#ce9178]">
+                  'Backend & Full-Stack Developer'
+                </span>
+                ,{"\n"}
+                &nbsp;&nbsp;<span className="text-[#425d82]">focus</span>:{" "}
+                <span className="text-[#ce9178]">
+                  'Fintech & Marketplaces'
+                </span>
+                ,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">skills</span>:{" "}
                 <span className="">[</span>
-                <span className="text-[#ce9178]">'React'</span>,{" "}
+                <span className="text-[#ce9178]">'Node.js'</span>,{" "}
+                <span className="text-[#ce9178]">'Express'</span>,{" "}
                 <span className="text-[#ce9178]">'Laravel'</span>,{" "}
-                <span className="text-[#ce9178]">'Codeignita'</span>,{" "}
-                {/* <span className="text-[#ce9178]">'TypeScript'</span>,{' '} */}
-                <span className="text-[#ce9178]">'Node.js, JavaScript'</span>,{" "}
-                <span className="text-[#ce9178]">'HTML'</span>,{" "}
-                <span className="text-[#ce9178]">'CSS'</span>
+                <span className="text-[#ce9178]">'CodeIgniter'</span>,{" "}
+                <span className="text-[#ce9178]">'PostgreSQL'</span>,{" "}
+                <span className="text-[#ce9178]">'MySQL'</span>,{" "}
+                <span className="text-[#ce9178]">'React'</span>,{" "}
+                <span className="text-[#ce9178]">'JavaScript'</span>
                 <span className="">]</span>,{"\n"}
                 &nbsp;&nbsp;<span className="text-[#425d82]">
                   passion
                 </span>:{" "}
                 <span className="text-[#ce9178]">
-                  'Designing and developing elegant, user-friendly web
-                  interfaces.'
+                  'Building secure, reliable systems that handle real money
+                  and real users.'
                 </span>
                 {"\n"}
                 <span className="">{"};"}</span>
@@ -63,7 +64,7 @@ const HomePage = () => {
                 <p>Download CV</p>
                 <CgSoftwareDownload className="text-[30px]" />
               </div>
-              
+
             </a>
           </div>
         </div>
@@ -72,7 +73,7 @@ const HomePage = () => {
           <img
             src={henryimg}
             className="bg-white rounded-md shadow-[20px_20px_10px_0px_#425d82] w-[400px] h-[400px] relative"
-            alt=""
+            alt="Henry Ojukwu, Backend & Full-Stack Developer"
           />
         </div>
       </div>
@@ -83,22 +84,26 @@ const HomePage = () => {
         {/* Experience Card */}
         <div className="bg-[#1f2a2e] p-8 rounded-lg text-center shadow-md">
           <HiOutlineClock className="text-cyan-400 text-4xl mx-auto mb-2" />
-          <h2 className="text-2xl font-bold text-cyan-300">7+</h2>
+          <h2 className="text-2xl font-bold text-cyan-300">5+</h2>
           <p className="mt-1 text-sm text-cyan-100">Years Experience</p>
         </div>
 
-        {/* Projects Completed Card */}
+        {/* Backends Shipped Card */}
         <div className="bg-[#1a2e1b] p-8 rounded-lg text-center shadow-md">
           <FiCheckCircle className="text-green-400 text-4xl mx-auto mb-2" />
-          <h2 className="text-2xl font-bold text-green-300">5+</h2>
-          <p className="mt-1 text-sm text-green-100">Projects Completed</p>
+          <h2 className="text-2xl font-bold text-green-300">3</h2>
+          <p className="mt-1 text-sm text-green-100">
+            Fintech & Marketplace Backends
+          </p>
         </div>
 
-        {/* Client Satisfaction Card */}
+        {/* Security Card */}
         <div className="bg-[#2e1a2e] p-8 rounded-lg text-center shadow-md">
-          <CiMedal className="text-pink-400 text-4xl mx-auto mb-2" />
-          <h2 className="text-2xl font-bold text-pink-300">100%</h2>
-          <p className="mt-1 text-sm text-pink-100">Client Satisfaction</p>
+          <FiShield className="text-pink-400 text-4xl mx-auto mb-2" />
+          <h2 className="text-2xl font-bold text-pink-300">Secure</h2>
+          <p className="mt-1 text-sm text-pink-100">
+            Payments, KYC/AML & Webhooks
+          </p>
         </div>
       </div>
     </div>
