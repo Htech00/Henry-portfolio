@@ -1,13 +1,5 @@
 import React from "react";
-import { IoMdCode } from "react-icons/io";
-import { MdPhoneIphone } from "react-icons/md";
-import { CiDatabase } from "react-icons/ci";
-import { TfiMicrosoft } from "react-icons/tfi";
-import { IoFlashOutline } from "react-icons/io5";
-import { FaMeetup } from "react-icons/fa";
-
-
-
+import { services } from "../data/services";
 
 const Services = () => {
   return (
@@ -19,73 +11,35 @@ const Services = () => {
       <div className="space-y-4">
         <p className="text-[#6a9955] text-2xl">// Services</p>
         <p className="text-[#425d82] text-4xl font-semibold ">
-          Services Rendered
+          What I Build
         </p>
       </div>
-      <p >
-        End-to-end development solutions designed to transform your ideas into
-        reality
+      <p>
+        From secure payment backends to complete web applications, I build
+        systems that are reliable, scalable, and ready for real users.
       </p>
-      <div className="grid md:grid-cols-3 grid-cols-1 rounded-md mb-6 gap-10 ">
-        <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <IoMdCode className="text-[52px] text-[#425d82]" /> 
-              <p className="text-[#425d82] font-semibold text-[18px] ">
-                Web Development
-              </p>
-              <p className="text-center mt-4">
-                Developing fast, responsive web applications using modern tools and frameworks.
-              </p>
-        </div>
-
-        <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <MdPhoneIphone className="text-[52px] text-[#a15eaa]" /> 
-              <p className="text-[#a15eaa] font-semibold text-[18px] ">
-                Mobile Development
-              </p>
-              <p className="text-center  mt-4">
-                Developing mobile applications that run seamlessly on both iOS and Android platforms.
-              </p>
-        </div>
-
-        <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <CiDatabase className="text-[52px] text-[#90f1f5]" /> 
-              <p className="text-[#90f1f5] font-semibold text-[18px] ">
-                Backend Development
-              </p>
-              <p className="text-center  mt-4">
-                Developing fast, responsive web applications using modern tools and frameworks.
-              </p>
-        </div>
-
-         <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <TfiMicrosoft className="text-[52px] text-[#4b632d]" /> 
-              <p className="text-[#4b632d] font-semibold text-[18px] ">
-                Software Testing
-              </p>
-              <p className="text-center mt-4">
-                Identifying bugs and ensuring app reliability through manual and automated testing.
-              </p>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 mb-6 gap-6 font-mono">
+        {services.map(({ Icon, title, desc, tags }) => (
+          <div
+            key={title}
+            className="group flex flex-col border border-[#3c3c3c] rounded-md p-6 bg-[#3c3c3c]/10 transition duration-300 hover:-translate-y-1 hover:border-[#3691c5]"
+          >
+            <div className="flex h-11 w-11 items-center justify-center rounded-md border border-[#3c3c3c] text-[#3691c5] transition-colors group-hover:border-[#3691c5]">
+              <Icon className="text-[22px]" />
+            </div>
+            <h3 className="mt-4 text-[#3691c5] font-semibold text-[17px]">
+              {title}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed">{desc}</p>
+            <div className="mt-auto flex flex-wrap gap-2 pt-5 text-[12px] text-[#ce9178]">
+              {tags.map((tag) => (
+                <p key={tag} className="bg-[#3c3c3c] py-1 px-2 rounded-md">
+                  {tag}
+                </p>
+              ))}
+            </div>
           </div>
-
-          <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <IoFlashOutline className="text-[52px] text-[#6e5b05]" /> 
-              <p className="text-[#6e5b05] font-semibold text-center text-[18px] ">
-                Performance Optimization
-              </p>
-              <p className="text-center mt-4">
-                Enhancing app speed and efficiency for a smoother user experience.
-              </p>
-          </div>
-
-          <div className="border border-[#3c3c3c] rounded-md flex flex-col items-center  p-6 bg-[#3c3c3c]/10 mt-2">
-             <FaMeetup className="text-[52px] text-[#faf895]" /> 
-              <p className="text-[#faf895] font-semibold text-[18px] ">
-                Consultation
-              </p>
-              <p className="text-center mt-4">
-                Providing expert guidance on software solutions, project planning, and technology choices.
-              </p>
-          </div>
+        ))}
       </div>
     </div>
   );
