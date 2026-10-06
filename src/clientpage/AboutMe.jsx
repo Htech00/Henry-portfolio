@@ -24,8 +24,8 @@ const AboutMe = () => {
             <div className="w-20 h-1 bg-[#425d82] mt-2 rounded-full"></div>
           </div>
           <p className="text-xl sm:text-2xl font-semibold text-gray-800 leading-snug">
-            I build the backend systems that move money and connect people,
-            securely and reliably.
+            I help businesses grow by building secure, dependable software
+            that scales with them.
           </p>
           <a
             href="/resume.pdf"
