@@ -1,14 +1,6 @@
 import React from "react";
 import henryimg from "../assets/henry.png";
-
-const skillGroups = [
-  { name: "languages", items: ["JavaScript", "PHP", "Java", "SQL"] },
-  { name: "backend", items: ["Node.js", "Express", "NestJS", "Laravel", "CodeIgniter"] },
-  { name: "databases", items: ["PostgreSQL", "MySQL"] },
-  { name: "integrations", items: ["Payment Gateways", "Banking APIs", "KYC/AML", "Remita", "Webhooks"] },
-  { name: "frontend", items: ["React", "Vue.js", "Tailwind CSS", "HTML/CSS", "jQuery"] },
-  { name: "tools", items: ["Git", "VS Code"] },
-];
+import { skillGroups } from "../data/skills";
 
 const interests = [
   "Contributing to open source and side projects",
@@ -95,8 +87,8 @@ const AboutMe = () => {
           </p>
           <div className="flex flex-col gap-4">
             {skillGroups.map((group) => (
-              <div key={group.name}>
-                <p className="text-[#425d82] text-sm mb-2">{group.name}:</p>
+              <div key={group.key}>
+                <p className="text-[#425d82] text-sm mb-2">{group.key}:</p>
                 <div className="flex flex-wrap gap-2 text-[12px] text-[#ce9178]">
                   {group.items.map((item) => (
                     <p key={item} className="bg-[#3c3c3c] py-1 px-2 rounded-md">

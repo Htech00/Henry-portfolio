@@ -1,156 +1,78 @@
 import React, { useEffect } from "react";
+import { FiCheck } from "react-icons/fi";
 import ScrollReveal from "scrollreveal";
-
-const skills = [
-  { name: "React", level: 90 },
-  { name: "Next.js", level: 85 },
-  { name: "TypeScript", level: 80 },
-  { name: "Tailwind CSS", level: 95 },
-  { name: "UI/UX Design", level: 85 },
-  { name: "Node.js", level: 75 },
-];
-
-const otherTechnologies = [
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "PHP",
-  "JAVA",
-  "MongoDB",
-  "Express",
-  "Firebase",
-  "Vite",
-  "Git",
-  "GitHub",
-  "Laravel",
-  "Tailwind CSS",
-  "Node.js",
-  "CodeIgnita",
-  "Ajax",
-  "Jquery",
-];
-
+import { skillGroups, practices } from "../data/skills";
 
 const Skills = () => {
-
-    useEffect(() => {
-   ScrollReveal().reveal(".partners",{
-      duration: 1500,
-      origin: "left",
-      distance: "800px",
-      delay: 500,
-      easing: "ease-in-out",
-      opacity: 0,
-    });
-
-     ScrollReveal().reveal(".elipse",{
-      duration: 200,
-      origin: "left",
-      distance: "800px",
-      delay: 500,
-      easing: "ease-in-out",
-      opacity: 0,
-    }); 
-    
-    ScrollReveal().reveal(".card",{
-      duration: 500,
-      origin: "right",
-      distance: "200px",
-      delay: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".laptop",{
-      duration: 800,
-      origin: "top",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".hotspot",{
-      duration: 800,
-      origin: "right",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-     ScrollReveal().reveal(".watch",{
-      duration: 800,
-      origin: "right",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
-      opacity: 0,
-    });
-
-    ScrollReveal().reveal(".diamond",{
-      duration: 800,
+  useEffect(() => {
+    ScrollReveal().reveal(".skill-card", {
+      duration: 700,
       origin: "bottom",
-      distance: "100px",
-      delay: 500,
-      easing: "cubic-bezier(1, -1, 0.5, 3.55)",
+      distance: "20px",
+      easing: "ease-out",
       opacity: 0,
+      interval: 100,
     });
-
-
-},[])
-
+  }, []);
 
   return (
     <div
-      className="w-full bg-[linear-gradient(to_right,rgba(66,93,130,0.2),rgba(255,255,255,0.2))] py-10 px-4 sm:px-6 lg:px-8 scroll-mt-[80px] sm:scroll-mt-[100px]"
+      className="w-full bg-[linear-gradient(to_right,rgba(66,93,130,0.1),rgba(255,255,255,0.2))] py-16 px-4 sm:px-6 lg:px-8 scroll-mt-[80px] sm:scroll-mt-[100px]"
       id="skills"
     >
       <div className="max-w-6xl mx-auto text-gray-800">
         {/* Heading */}
         <div className="text-center mb-10">
-          <p className="text-[#425d82] text-3xl sm:text-4xl font-semibold">
-            My Skills
+          <h2 className="text-[#425d82] text-3xl sm:text-4xl font-semibold">
+            Skills & Technologies
+          </h2>
+          <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full mb-4"></div>
+          <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+            The tools I use to design, build, and ship reliable software,
+            from the database to the user interface.
           </p>
-          <div className="w-20 h-1 bg-[#425d82] mx-auto mt-2 rounded-full"></div>
         </div>
 
-        {/* Skill Cards */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-          {skills.map((skill) => (
+        {/* Skill Groups */}
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {skillGroups.map(({ Icon, name, items }) => (
             <div
-              key={skill.name}
-              className="py-6 px-6 shadow-md rounded-xl bg-white elipse"
+              key={name}
+              className="skill-card bg-white rounded-xl border border-gray-200 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#425d82]/40 hover:shadow-lg"
             >
-              <div className="font-semibold mb-6 flex justify-between">
-                <span>{skill.name}</span>
-                <span>{skill.level}%</span>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#425d82]/10 text-[#425d82]">
+                  <Icon className="text-[20px]" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
               </div>
-              <div className="w-full h-2 bg-gray-200 rounded-full">
-                <div
-                  className="h-2 rounded-full bg-blue-500"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
+              <ul className="flex flex-wrap gap-2">
+                {items.map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-700"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
 
-        {/* Other Technologies */}
+        {/* Engineering Practices */}
         <div className="mt-12">
-          <h2 className="text-lg sm:text-xl font-semibold mb-4 text-[#425d82]">
-            Other Technologies
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {otherTechnologies.map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 text-sm bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200 transition"
-              >
-                {tech}
-              </span>
+          <h3 className="text-lg sm:text-xl font-semibold mb-4 text-[#425d82]">
+            Engineering Practices
+          </h3>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {practices.map((practice) => (
+              <li key={practice} className="flex items-center gap-2 text-gray-700">
+                <FiCheck className="text-[#425d82] text-[18px] shrink-0" />
+                {practice}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>
